@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* FONT-FACE */
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('fonts/Georgia.eot');
+  src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Georgia.woff') format('woff'),
+  url('fonts/Georgia.ttf') format('truetype'),
+  url('fonts/Georgia.otf') format('opentype'),
+  url('fonts/Georgia.svg#Georgia') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('fonts/GeorgiaItalic.eot');
+  src: url('fonts/GeorgiaItalic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GeorgiaItalic.woff') format('woff'),
+  url('fonts/GeorgiaItalic.ttf') format('truetype'),
+  url('fonts/GeorgiaItalic.otf') format('opentype'),
+  url('fonts/GeorgiaItalic.svg#GeorgiaItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('fonts/GeorgiaBoldItalic.eot');
+  src: url('fonts/GeorgiaBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GeorgiaBoldItalic.woff') format('woff'),
+  url('fonts/GeorgiaBoldItalic.ttf') format('truetype'),
+  url('fonts/GeorgiaBoldItalic.otf') format('opentype'),
+  url('fonts/GeorgiaBoldItalic.svg#GeorgiaBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('fonts/Geomanist-Regular.eot');
+  src: url('fonts/Geomanist-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Geomanist-Regular.woff') format('woff'),
+  url('fonts/Geomanist-Regular.ttf') format('truetype'),
+  url('fonts/Geomanist-Regular.otf') format('opentype'),
+  url('fonts/Geomanist-Regular.svg#Geomanist-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('fonts/Geomanist-Bold.eot');
+  src: url('fonts/Geomanist-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Geomanist-Bold.woff') format('woff'),
+  url('fonts/Geomanist-Bold.ttf') format('truetype'),
+  url('fonts/Geomanist-Bold.otf') format('opentype'),
+  url('fonts/Geomanist-Bold.svg#Geomanist-Bold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Platform';
+  src: url('fonts/Platform-Light.eot');
+  src: url('fonts/Platform-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Platform-Light.woff') format('woff'),
+  url('fonts/Platform-Light.ttf') format('truetype'),
+  url('fonts/Platform-Light.otf') format('opentype'),
+  url('fonts/Platform-Light.svg#Platform-Light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Platform';
+  src: url('fonts/Platform-Regular.eot');
+  src: url('fonts/Platform-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Platform-Regular.woff') format('woff'),
+  url('fonts/Platform-Regular.ttf') format('truetype'),
+  url('fonts/Platform-Regular.otf') format('opentype'),
+  url('fonts/Platform-Regular.svg#Platform-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Platform';
+  src: url('fonts/Platform-Medium.eot');
+  src: url('fonts/Platform-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Platform-Medium.woff') format('woff'),
+  url('fonts/Platform-Medium.ttf') format('truetype'),
+  url('fonts/Platform-Medium.otf') format('opentype'),
+  url('fonts/Platform-Medium.svg#Platform-Medium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Platform';
+  src: url('fonts/Platform-Bold.eot');
+  src: url('fonts/Platform-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Platform-Bold.woff') format('woff'),
+  url('fonts/Platform-Bold.ttf') format('truetype'),
+  url('fonts/Platform-Bold.otf') format('opentype'),
+  url('fonts/Platform-Bold.svg#Platform-Bold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* GLOBAL */
+
+.screen-mobile {
+  display: block;
+  pointer-events: inherit;
+}
+
+.screen-desktop {
+  display: none;
+  pointer-events: none;
+}
+
+.graphic-container {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .screen-mobile {
+    display: none;
+    pointer-events: none;
+  }
+
+  .screen-desktop {
+    display: block;
+    pointer-events: inherit;
+  }
+
+}

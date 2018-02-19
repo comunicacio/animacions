@@ -1,0 +1,710 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Descripció">
+	<meta name="keywords" content="Paraules clau">
+	<title>Activitat Física</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="actividad-fisica.js"></script>
+	<link rel="stylesheet" href="animacions.css">
+</head>
+
+<body style="overflow: hidden;">
+	<div class="graphic-container">
+		<svg class="screen-desktop" version="1.1" id="actividad-fisica" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 1507" style="enable-background:new 0 0 1440 1507;" xml:space="preserve">
+			<style type="text/css">
+				.screen-desktop .st0{fill:#E6E7E8;}
+				.screen-desktop .st1{fill:#231F20;}
+				.screen-desktop .st2{fill:none;stroke:#231F20;stroke-width:2.4;stroke-miterlimit:10;}
+				.screen-desktop .st3{fill:none;stroke:#231F20;stroke-width:2.4;stroke-linejoin:round;stroke-miterlimit:10;}
+				.screen-desktop .st4{fill:none;stroke:#231F20;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+				.screen-desktop .st5{fill:#3AA336;}
+				.screen-desktop .st6{fill:none;}
+				.screen-desktop .st7{font-family:'Georgia'; font-weight: 300;}
+				.screen-desktop .st8{font-size:31.542px;}
+				.screen-desktop .st9{fill:#3AAC49;}
+				.screen-desktop .st10{font-family:'Platform'; font-weight: 600;}
+				.screen-desktop .st11{font-size:33.132px;}
+				.screen-desktop .st12{font-family:'Platform'; font-weight: 600;}
+				.screen-desktop .st13{fill:#E85D6A;}
+				.screen-desktop .st14{font-size:50.728px;}
+				.screen-desktop .st15{letter-spacing:1px;}
+				.screen-desktop .st16{opacity:0;fill:#231F20;}
+				.screen-desktop .st17{fill:#3CAA49;}
+				.screen-desktop .st18{fill:#FFFFFF;}
+				.screen-desktop .st19{font-family:'Platform'; font-weight: 300}
+				.screen-desktop .st20{font-size:30px;}
+				.screen-desktop .st21{letter-spacing:2;}
+				.screen-desktop .st22{fill:#E55465;}
+				.screen-desktop .st23{fill:#E95D6A;}
+				.screen-desktop .st24{font-size:73.353px;}
+				.screen-desktop .st25{font-family:'Platform'; font-weight: 100}
+				.screen-desktop .st26{font-size:26px;}
+				.screen-desktop .st27{font-family:'Georgia'; font-weight: 300; font-style: italic;}
+				.screen-desktop .st28{text-transform: uppercase;}
+
+				.info-link {
+					cursor: pointer;
+					opacity: 1;
+
+					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+				}
+
+				.info-link:hover,
+				.info-link:focus {
+					opacity: .4;
+				}
+
+				@media (max-width: 1023px) {
+					.info-link:hover,
+					.info-link:focus {
+						opacity: 1;
+					}
+				}
+
+				.info-txt {
+					letter-spacing: 1.7px;
+				}
+
+				.Rellotge_1,
+				.Rellotge_2,
+				.Rellotge_3 {
+					opacity: 1;
+
+					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+				}
+
+				.Rellotge_1:hover,
+				.Rellotge_2:hover,
+				.Rellotge_3:hover {
+					opacity: .6;
+				}
+
+				.Rellotge_1.active:hover,
+				.Rellotge_2.active:hover,
+				.Rellotge_3.active:hover {
+					opacity: 1;
+				}
+
+				.Rellotge_1.disable,
+				.Rellotge_2.disable,
+				.Rellotge_3.disable {
+					opacity: 0;
+					pointer-events: none;
+				}
+
+				.info-link,
+				.rellotge1-link,
+				.rellotge2-link,
+				.rellotge2-link-active,
+				.rellotge3-link,
+				.close-link,
+				.close-link_1_,
+				.close-link_2_,
+				.close-link_3_ {
+					cursor: pointer;
+				}
+
+				.info-txt,
+				.rellotge1-txt,
+				.rellotge2-txt,
+				.rellotge3-txt {
+					pointer-events: none;
+					position: relative;
+					margin-top: 20px;
+					opacity: 0;
+					z-index: 0;
+
+					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+				}
+
+				.info-txt.active ,
+				.active .rellotge1-txt,
+				.active .rellotge2-txt,
+				.active .rellotge3-txt {
+					pointer-events: inherit;
+					margin-top: 0;
+					opacity: 1;
+					z-index: 9;
+				}
+
+				.Rellotge_2 .Rellotge2-active {
+					display: none;
+				}
+
+				.Rellotge_2.active .Rellotge2-active {
+					display: block;
+				}
+				.rellotge1-click rect,
+				.rellotge2-click rect,
+				.rellotge2-click_2_ rect,
+				.rellotge3-click rect {
+					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+
+					-webkit-transform: translateY(0px);
+					-moz-transform: translateY(0px);
+					-o-transform: translateY(0px);
+					transform: translateY(0px);
+				}
+				.active .rellotge1-click rect,
+				.active .rellotge2-click rect,
+				.active .rellotge2-click_2_ rect,
+				.active .rellotge3-click rect {
+					-webkit-transform: translateY(18px);
+					-moz-transform: translateY(18px);
+					-o-transform: translateY(18px);
+					transform: translateY(18px);
+				}
+			</style>
+
+			<g class="footer">
+				<g class="logo_bici-arbre">
+					<rect x="166.8" y="1210" class="st0" width="64.7" height="192.7"/>
+					<rect x="159" y="1359.1" class="st1" width="15.4" height="44.4"/>
+					<g>
+						<g>
+							<circle class="st2" cx="232.9" cy="1387.6" r="15.1"/>
+							<circle class="st2" cx="180.2" cy="1387.6" r="15.1"/>
+							<polyline class="st3" points="224.8,1363.8 203.2,1387.6 179.5,1387.6 193.9,1359.9 223.4,1359.9 				"/>
+							<line class="st3" x1="202.4" y1="1387.6" x2="192" y2="1353.8"/>
+							<line class="st4" x1="197.4" y1="1352.7" x2="184.3" y2="1352.7"/>
+							<polyline class="st4" points="231.4,1385.1 221.7,1353.8 231.4,1353.8 				"/>
+							<path class="st4" d="M231.4,1353.8c2.7,0,4.9,2.2,4.9,4.9c0,2.7-2.2,4.9-4.9,4.9"/>
+							<path class="st4" d="M234.3,1387.6c0,0-1.8,0.3-2.6-2"/>
+						</g>
+						<circle class="st1" cx="203.6" cy="1387.6" r="4.7"/>
+					</g>
+					<circle class="st5" cx="168.5" cy="1320.5" r="43.3"/>
+				</g>
+				<rect x="319.8" y="1227.1" class="st6" width="1014.2" height="186"/>
+				<text transform="matrix(1 0 0 1 319.7684 1250.9524)" class="st1 st7 st8">LA PLANIFICACIÓN URBANA Y DEL TRANSPORTE influye en el nivel </text>
+				<text transform="matrix(1 0 0 1 319.7684 1288.8524)" class="st1 st7 st8">de actividad física de la ciudadanía y, por tanto, en nuestra salud. </text>
+				<text transform="matrix(1 0 0 1 319.7684 1326.6525)" class="st1 st7 st8">Necesitamos ciudades que prioricen el transporte a pie y en bicicleta, </text>
+				<text transform="matrix(1 0 0 1 319.7684 1364.5524)" class="st1 st7 st8">que cuenten con espacios verdes y faciliten el desplazamiento activo y/o </text>
+				<text transform="matrix(1 0 0 1 319.7684 1402.3524)" class="st1 st7 st8">en transporte público, así como realizar deporte.</text>
+				<rect class="linia_bottom" x="100" y="1181" width="1240" height="3"/>
+			</g>
+			<g class="main-content">
+				<g class="Rellotge_3">
+
+					<rect x="1002" y="1037" class="st6" width="341.6" height="115.5"/>
+					<text transform="matrix(1 0 0 1 1002 1061.199)" class="st9 st10 st11">de actividad física</text>
+					<text transform="matrix(1 0 0 1 1002 1100.9989)" class="st9 st12 st11">moderada*</text>
+					<text transform="matrix(1 0 0 1 1161.7 1100.9989)" class="st13 st10 st11"> </text>
+					<text transform="matrix(1 0 0 1 1166.7 1100.9989)" class="st1 st10 st11">la mayoría </text>
+					<text transform="matrix(1 0 0 1 1002 1140.699)" class="st1 st10 st11">de días de la semana</text>
+					<rect x="1002" y="907.1" class="st6" width="330" height="115.5"/>
+					<text transform="matrix(1 0 0 1 1002 944.2036)" class="st1 st10 st14 st15 st28">30 minutos</text>
+					<text transform="matrix(1 0 0 1 1002 1005.1036)" class="st1 st10 st14 st15 st28">o más</text>
+					<g class="Rellotge_3_">
+						<path class="st1" d="M1167.6,536.8c-91.5,0-165.6,74.2-165.6,165.6S1076.2,868,1167.6,868s165.6-74.2,165.6-165.6
+						S1259,536.8,1167.6,536.8z M1167.6,843.5c-77.9,0-141-63.1-141-141s63.1-141,141-141s141,63.1,141,141S1245.5,843.5,1167.6,843.5
+						z"/>
+						<path class="st1" d="M1167.6,685c-9.7,0-17.5,7.8-17.5,17.5s7.8,17.5,17.5,17.5s17.5-7.8,17.5-17.5S1177.2,685,1167.6,685z"/>
+
+						<rect x="1253.7" y="537.6" transform="matrix(0.5468 -0.8373 0.8373 0.5468 108.6814 1315.719)" class="st1" width="31.9" height="39.7"/>
+						<g class="rellotge3-click">
+							<rect x="1151.9" y="492.8" class="st1" width="31.3" height="48.9"/>
+							<rect x="1140.4" y="473.2" class="st1" width="54.3" height="28.8"/>
+							<path class="st1" d="M1167.6,436.4c-26.6,0-48.1,21.6-48.1,48.1s21.6,48.1,48.1,48.1c26.6,0,48.1-21.6,48.1-48.1
+							S1194.2,436.4,1167.6,436.4z M1167.6,523.5c-21.5,0-39-17.5-39-39s17.5-39,39-39s39,17.5,39,39S1189.1,523.5,1167.6,523.5z"/>
+						</g>
+						<path class="st1" d="M1156.5,689.1c-7.4,6.2-8.3,17.3-2.1,24.7s17.3,8.3,24.7,2.1c7.4-6.2,8.3-17.3,2.1-24.7
+						S1163.8,682.8,1156.5,689.1z"/>
+						<polygon class="st1" points="1172,691.4 1156.2,704.8 1083.1,602.3 			"/>
+						<path class="st5" d="M1167.8,573.7v97.6c17.1,0.1,31,14,31,31.2s-14,31.2-31.2,31.2s-31.2-14-31.2-31.2c0-2.7,0.4-5.3,1-7.9
+						l-60.8-83.3c-23.4,23.3-37.8,55.6-37.8,91.2c0,71.1,57.7,128.8,128.8,128.8c71.1,0,128.8-57.7,128.8-128.8
+						C1296.4,631.4,1238.8,573.8,1167.8,573.7z"/>
+					</g>
+					<rect class="rellotge3-link st16" x="936.9" y="423.8" width="407.1" height="728.7"/>
+					<g class="rellotge3-txt">
+						<rect class="bg-txt_3_ st17" x="98.3" y="423.8" width="837.5" height="728.7"/>
+						<rect x="909.6" y="423.8" width="26.2" height="728.7"/>
+						<rect x="138.8" y="487.1" class="st6" width="758" height="284"/>
+						<g class="close-link_3_">
+							<rect class="bg-close_3_" x="98.3" y="423.8" width="33.1" height="33.1"/>
+							<path class="ico-close_3_ st18" d="M124.3,446l-3.8,3.8l-5.7-5.6l-5.6,5.6l-3.8-3.8l5.6-5.6l-5.6-5.7l3.8-3.8l5.6,5.6
+							l5.7-5.6l3.8,3.8l-5.6,5.6L124.3,446z"/>
+						</g>
+						<rect x="204" y="613.4" class="st6" width="644" height="400"/>
+						<text transform="matrix(1 0 0 1 204 635.3197)"><tspan x="0" y="0" class="st18 st19 st20 st15">¡Enhorabuena!</tspan><tspan x="0" y="108" class="st18 st19 st20 st15">Estás cumpliendo con la recomendación de la </tspan><tspan x="0" y="144" class="st18 st19 st20 st15">OMS de realizar al menos 30 minutos de </tspan><tspan x="0" y="180" class="st18 st19 st20 st15">actividad física moderada la mayoría de días </tspan><tspan x="0" y="216" class="st18 st19 st20 st15">de la semana. Las personas activas tienen un </tspan><tspan x="0" y="252" class="st18 st19 st20 st15">20-30% menos de riesgo de mortalidad </tspan><tspan x="0" y="288" class="st18 st19 st20 st15">prematura. </tspan></text>
+					</g>
+				</g>
+				<g class="Rellotge_2">
+					<rect x="559.5" y="1037" class="st6" width="341.6" height="115.5"/>
+					<text transform="matrix(1 0 0 1 559.5 1061.199)" class="st13 st10 st11 st15">de actividad física</text>
+					<text transform="matrix(1 0 0 1 559.5 1100.9989)" class="st13 st12 st11">moderada* </text>
+					<text transform="matrix(1 0 0 1 724.2 1100.9989)" class="st1 st10 st11 st15">la mayoría </text>
+					<text transform="matrix(1 0 0 1 559.5 1140.699)" class="st1 st10 st11 st15">de días de la semana</text>
+					<rect x="559.5" y="907.1" class="st6" width="330" height="115.5"/>
+					<text transform="matrix(1 0 0 1 559.5 944.2036)" class="st1 st10 st14 st21 st28">Menos de</text>
+					<text transform="matrix(1 0 0 1 559.5 1005.1036)" class="st1 st10 st14 st21 st28">30 minutos</text>
+					<g class="Rellotge_2_">
+						<path class="st1" d="M717.6,537.3C626.7,537.3,553,611,553,701.9s73.7,164.6,164.6,164.6s164.6-73.7,164.6-164.6
+						S808.5,537.3,717.6,537.3z M717.6,842c-77.4,0-140.1-62.7-140.1-140.1s62.7-140.1,140.1-140.1s140.1,62.7,140.1,140.1
+						C857.7,779.3,795,842,717.6,842z"/>
+
+						<rect x="803.3" y="538" transform="matrix(0.5468 -0.8373 0.8373 0.5468 -95.7422 938.6819)" class="st1" width="31.7" height="39.5"/>
+						<g class="rellotge2-click">
+							<rect x="702" y="493.6" class="st1" width="31.1" height="48.6"/>
+							<rect x="690.6" y="474.1" class="st1" width="54" height="28.7"/>
+							<path class="st1" d="M717.6,437.5c-26.4,0-47.8,21.4-47.8,47.8s21.4,47.8,47.8,47.8c26.4,0,47.8-21.4,47.8-47.8
+							C765.4,458.9,744,437.5,717.6,437.5z M717.6,524.1c-21.4,0-38.8-17.3-38.8-38.8c0-21.4,17.3-38.8,38.8-38.8s38.8,17.3,38.8,38.8
+							C756.3,506.7,739,524.1,717.6,524.1z"/>
+						</g>
+						<path class="st1" d="M734.2,699.4c-1.7-9.4-10.8-15.7-20.2-14s-15.7,10.8-14,20.2s10.8,15.7,20.2,14S735.9,708.8,734.2,699.4z"/>
+						<polygon class="st1" points="724.5,711.6 720.8,691.4 845.2,679 			"/>
+						<path class="st22" d="M741.1,681.7l100.5-9.9l0.3-0.1c-13.6-56.1-64.1-97.8-124.4-97.8v97C727,670.9,735.4,675.1,741.1,681.7z"/>
+					</g>
+					<rect class="rellotge2-link st16" x="503.9" y="423.8" width="407.1" height="728.7"/>
+					<g class="rellotge2-txt">
+						<rect class="bg-txt_2_ st23" x="503.9" y="423.8" width="837.5" height="728.7"/>
+						<rect x="503.9" y="423.8" width="26.2" height="728.7"/>
+						<rect x="544.4" y="487.1" class="st6" width="758" height="284"/>
+						<g class="close-link_2_">
+							<rect class="bg-close_2_" x="1308.3" y="423.8" width="33.1" height="33.1"/>
+							<path class="ico-close_2_ st18" d="M1334.3,446l-3.8,3.8l-5.7-5.6l-5.6,5.6l-3.8-3.8l5.6-5.6l-5.6-5.7l3.8-3.8l5.6,5.6
+							l5.7-5.6l3.8,3.8l-5.6,5.6L1334.3,446z"/>
+						</g>
+						<rect x="626.2" y="520.9" class="st6" width="687.9" height="555.7"/>
+						<text transform="matrix(1 0 0 1 626.1591 542.7968)"><tspan x="0" y="0" class="st18 st19 st20 st15">La OMS recomienda realizar al menos 30 minutos </tspan><tspan x="0" y="40" class="st18 st19 st20 st15">de actividad física moderada la mayoría de días </tspan><tspan x="0" y="80" class="st18 st19 st20 st15">de la semana. </tspan><tspan x="0" y="160" class="st18 st19 st20 st15">Llegarás a este objetivo sin demasiado esfuerzo si </tspan><tspan x="0" y="200" class="st18 st19 st20 st15">integras la actividad física en tu rutina diaria: ir en </tspan><tspan x="0" y="240" class="st18 st19 st20 st15">bicicleta a trabajar, hacer los trayectos cortos </tspan><tspan x="0" y="280" class="st18 st19 st20 st15">caminando o usar el transporte público son formas </tspan><tspan x="0" y="320" class="st18 st19 st20 st15">de conseguirlo. Hay apps que cuentan los pasos y </tspan><tspan x="0" y="360" class="st18 st19 st20 st15">el ejercicio que haces y te pueden ayudar. </tspan><tspan x="0" y="440" class="st18 st19 st20 st15">Ten en cuenta que las personas físicamente </tspan><tspan x="0" y="480" class="st18 st19 st20 st15">inactivas tienen un 20-30% más de riesgo de </tspan><tspan x="0" y="520" class="st18 st19 st20 st15">mortalidad prematura.</tspan></text>
+					</g>
+					<g class="Rellotge2-active">
+						<text transform="matrix(1 0 0 1 110.5 1061.199)" class="st13 st10 st11">de actividad física</text>
+						<text transform="matrix(1 0 0 1 110.5 1100.9989)" class="st13 st12 st11">moderada* </text>
+						<text transform="matrix(1 0 0 1 275.2 1100.9989)" class="st1 st10 st11">la mayoría </text>
+						<text transform="matrix(1 0 0 1 110.5 1140.699)" class="st1 st10 st11">de días de la semana</text>
+						<text transform="matrix(1 0 0 1 110.5 944.2036)" class="st1 st10 st14 st28">Menos de</text>
+						<text transform="matrix(1 0 0 1 110.5 1005.1036)" class="st1 st10 st14 st28">30 minutos</text>
+						<g class="Rellotge_2_">
+							<path class="st1" d="M268.6,537.3C177.7,537.3,104,611,104,701.9s73.7,164.6,164.6,164.6s164.6-73.7,164.6-164.6
+							S359.5,537.3,268.6,537.3z M268.6,842c-77.4,0-140.1-62.7-140.1-140.1s62.7-140.1,140.1-140.1s140.1,62.7,140.1,140.1
+							S346,842,268.6,842z"/>
+
+							<rect x="354.3" y="538" transform="matrix(0.5468 -0.8373 0.8373 0.5468 -299.2604 562.716)" class="st1" width="31.7" height="39.5"/>
+							<g class="rellotge2-click_2_">
+								<rect x="253" y="493.6" class="st1" width="31.1" height="48.6"/>
+								<rect x="241.6" y="474.1" class="st1" width="54" height="28.7"/>
+								<path class="st1" d="M268.6,437.5c-26.4,0-47.8,21.4-47.8,47.8s21.4,47.8,47.8,47.8s47.8-21.4,47.8-47.8S295,437.5,268.6,437.5
+								z M268.6,524.1c-21.4,0-38.8-17.3-38.8-38.8c0-21.4,17.3-38.8,38.8-38.8s38.8,17.3,38.8,38.8
+								C307.3,506.7,290,524.1,268.6,524.1z"/>
+							</g>
+							<path class="st1" d="M285.2,699.4c-1.7-9.4-10.8-15.7-20.2-14s-15.7,10.8-14,20.2s10.8,15.7,20.2,14S286.9,708.8,285.2,699.4z"
+							/>
+							<polygon class="st1" points="275.5,711.6 271.8,691.4 396.2,679 				"/>
+							<path class="st22" d="M292.1,681.7l100.5-9.9l0.3-0.1c-13.6-56.1-64.1-97.8-124.4-97.8v97C278,670.9,286.4,675.1,292.1,681.7z"
+							/>
+						</g>
+					</g>
+					<rect class="rellotge2-link-active st16" x="67.5" y="423.8" width="407.1" height="728.7"/>
+				</g>
+				<g class="Rellotge_1">
+					<rect x="118.8" y="907.1" class="st6" width="330" height="169.5"/>
+					<text transform="matrix(1 0 0 1 118.8301 1065.9036)" class="st1 st10 st14 st21 st28">física</text>
+					<text transform="matrix(1 0 0 1 118.8301 1005.1036)" class="st1 st10 st14 st21 st28">actividad</text>
+					<text transform="matrix(1 0 0 1 118.8301 944.2036)" class="st1 st10 st14 st21 st28">No hago</text>
+					<g class="Rellotge_1_">
+						<path class="st1" d="M269,537.3c-90.9,0-164.6,73.7-164.6,164.6S178.1,866.5,269,866.5s164.6-73.7,164.6-164.6
+						S359.9,537.3,269,537.3z M269,842c-77.4,0-140.1-62.7-140.1-140.1S191.6,561.8,269,561.8s140.1,62.7,140.1,140.1
+						S346.4,842,269,842z"/>
+						<path class="st1" d="M269,684.5c-9.6,0-17.4,7.8-17.4,17.4s7.8,17.4,17.4,17.4s17.4-7.8,17.4-17.4S278.6,684.5,269,684.5z"/>
+
+						<rect x="354.7" y="538.1" transform="matrix(0.5468 -0.8373 0.8373 0.5468 -299.1511 563.0648)" class="st1" width="31.7" height="39.5"/>
+						<g class="rellotge1-click">
+							<rect x="253.4" y="493.6" class="st1" width="31.1" height="48.6"/>
+							<rect x="242" y="474.1" class="st1" width="54" height="28.7"/>
+							<path class="st1" d="M269,437.5c-26.4,0-47.8,21.4-47.8,47.8s21.4,47.8,47.8,47.8s47.8-21.4,47.8-47.8S295.4,437.5,269,437.5z
+							M269,524.1c-21.4,0-38.8-17.3-38.8-38.8c0-21.4,17.3-38.8,38.8-38.8s38.8,17.3,38.8,38.8C307.8,506.7,290.4,524.1,269,524.1z"
+							/>
+						</g>
+						<polygon class="st1" points="279.3,696.2 258.7,696.2 269,571.7 			"/>
+					</g>
+					<rect class="rellotge1-link st16" x="67.5" y="423.8" width="407.1" height="728.7"/>
+					<g class="rellotge1-txt">
+						<rect class="bg-txt_1_ st23" x="503.9" y="423.8" width="837.5" height="728.7"/>
+						<rect x="503.9" y="423.8" width="26.2" height="728.7"/>
+						<rect x="544.4" y="487.1" class="st6" width="758" height="284"/>
+						<g class="close-link_1_">
+							<rect class="bg-close_1_" x="1308.3" y="423.8" width="33.1" height="33.1"/>
+							<path class="ico-close_1_ st18" d="M1334.3,446l-3.8,3.8l-5.7-5.6l-5.6,5.6l-3.8-3.8l5.6-5.6l-5.6-5.7l3.8-3.8l5.6,5.6
+							l5.7-5.6l3.8,3.8l-5.6,5.6L1334.3,446z"/>
+						</g>
+						<rect x="626.2" y="520.9" class="st6" width="689.3" height="555.7"/>
+						<text transform="matrix(1 0 0 1 626.1591 542.7968)"><tspan x="0" y="0" class="st18 st19 st20 st15">La OMS recomienda realizar al menos 30 minutos </tspan><tspan x="0" y="40" class="st18 st19 st20 st15">de actividad física moderada la mayoría de días </tspan><tspan x="0" y="80" class="st18 st19 st20 st15">de la semana. </tspan><tspan x="0" y="160" class="st18 st19 st20 st15">Llegarás a este objetivo sin demasiado esfuerzo si </tspan><tspan x="0" y="200" class="st18 st19 st20 st15">integras la actividad física en tu rutina diaria: ir en </tspan><tspan x="0" y="240" class="st18 st19 st20 st15">bicicleta a trabajar, hacer los trayectos cortos </tspan><tspan x="0" y="280" class="st18 st19 st20 st15">caminando o usar el transporte público son formas </tspan><tspan x="0" y="320" class="st18 st19 st20 st15">de conseguirlo. Hay apps que cuentan los pasos y </tspan><tspan x="0" y="360" class="st18 st19 st20 st15">el ejercicio que haces y te pueden ayudar. </tspan><tspan x="0" y="440" class="st18 st19 st20 st15">Ten en cuenta que las personas físicamente </tspan><tspan x="0" y="480" class="st18 st19 st20 st15">inactivas tienen un 20-30% más de riesgo de </tspan><tspan x="0" y="520" class="st18 st19 st20 st15">mortalidad prematura.</tspan></text>
+					</g>
+				</g>
+			</g>
+			<g class="header">
+				<rect class="linia_top" x="100" y="404" width="1240" height="3"/>
+				<rect x="100" y="113.3" class="st6" width="1240" height="270"/>
+				<text transform="matrix(1 0 0 1 99.9998 342.9157)" class="st1 st10 st21 st24">haces a la semana?</text>
+				<text transform="matrix(1 0 0 1 99.9998 254.9157)" class="st1 st10 st21 st24">actividad física moderada </text>
+				<text transform="matrix(1 0 0 1 99.9998 166.9157)" class="st1 st10 st21 st24">¿Cuántos minutos de</text>
+				<g class="info-txt">
+					<rect class="bg-txt st17" x="502.5" y="282.1" width="837.5" height="420.3"/>
+					<rect x="543" y="335.4" class="st6" width="758" height="354.1"/>
+					<text transform="matrix(1 0 0 1 543 354.4056)"><tspan x="0" y="0" class="st18 st25 st26 st15">Según la Organización Mundial de la Salud (OMS), la actividad </tspan><tspan x="0" y="36" class="st18 st25 st26 st15">física moderada requiere un esfuerzo moderado, que acelera </tspan><tspan x="0" y="72" class="st18 st25 st26 st15">de forma perceptible el ritmo cardiaco.</tspan><tspan x="0" y="144" class="st18 st10 st26 st15">Ejemplos:</tspan><tspan x="0" y="180" class="st18 st25 st26 st15">Caminar a paso rápido, realizar tareas domésticas, bailar, </tspan><tspan x="0" y="216" class="st18 st25 st26 st15">participar de forma activa en juegos y deportes con niños y </tspan><tspan x="0" y="252" class="st18 st25 st26 st15">paseos con animales domésticos, trabajos de construcción </tspan><tspan x="0" y="288" class="st18 st25 st26 st15">generales, desplazamiento de cargas moderadas (&lt; 20 kg), etc.</tspan></text>
+					<g class="close-link">
+						<rect class="bg-close" x="1306.9" y="282.1" width="33.1" height="33.1"/>
+						<path class="ico-close st18" d="M1332.8,304.3l-3.8,3.8l-5.7-5.6l-5.6,5.6l-3.8-3.8l5.6-5.6l-5.6-5.7l3.8-3.8l5.6,5.6
+						l5.7-5.6l3.8,3.8l-5.6,5.6L1332.8,304.3z"/>
+					</g>
+				</g>
+				<text class="info-link st17 st27 st24" transform="matrix(1 0 0 1 903.7998 254.9157)">(i)</text>
+			</g>
+		</svg>
+
+		<svg class="screen-mobile" version="1.1" id="actividad-fisica-xs" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 5000"
+     style="enable-background:new 0 0 1440 5000;" xml:space="preserve">
+      <style type="text/css">
+        .screen-mobile .st0{fill:#E6E7E8;}
+        .screen-mobile .st1{fill:#231F20;}
+        .screen-mobile .st2{fill:none;stroke:#231F20;stroke-width:2.4;stroke-miterlimit:10;}
+        .screen-mobile .st3{fill:none;stroke:#231F20;stroke-width:2.4;stroke-linejoin:round;stroke-miterlimit:10;}
+        .screen-mobile .st4{fill:none;stroke:#231F20;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .screen-mobile .st5{fill:#3AA336;}
+        .screen-mobile .st6{fill:none;}
+        .screen-mobile .st7{font-family:'Georgia'; font-weight: 300;}
+        .screen-mobile .st8{font-size:40px;}
+        .screen-mobile .st9{fill:#3AAC49;}
+        .screen-mobile .st10{font-family:'Platform'; font-weight: 600;}
+        .screen-mobile .st11{font-size:67.5685px;}
+        .screen-mobile .st12{fill:#E85D6A;}
+        .screen-mobile .st13{font-size:103.4533px;}
+        .screen-mobile .st14{fill:#231F20;fill-opacity:0;}
+        .screen-mobile .st15{opacity:0;}
+        .screen-mobile .st16{fill:#3CAA49;}
+        .screen-mobile .st17{fill:#FFFFFF;}
+        .screen-mobile .st18{font-family:'Platform'; font-weight: 300;}
+        .screen-mobile .st19{font-size:56px;}
+        .screen-mobile .st20{font-size:64.3953px;}
+        .screen-mobile .st21{font-size:98.5949px;}
+        .screen-mobile .st22{letter-spacing:2;}
+        .screen-mobile .st23{fill:#E55465;}
+        .screen-mobile .st24{fill:#E95D6A;}
+        .screen-mobile .st25{font-size:56px;}
+        .screen-mobile .st26{font-size:124.3031px;}
+        .screen-mobile .st27{letter-spacing:3;}
+        .screen-mobile .st28{font-size:56px;}
+        .screen-mobile .st29{font-size:100.458px;}
+        .screen-mobile .st30{letter-spacing:1;}
+        .screen-mobile .st31{font-family:'Platform'; font-weight: 100;}
+        .screen-mobile .st32{font-size:56px;}
+        .screen-mobile .st33{font-family:'Georgia'; font-weight: 300; font-style: italic;}
+
+				.info-link {
+					cursor: pointer;
+					opacity: 1;
+
+					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+				}
+
+				.info-link:hover,
+				.info-link:focus {
+					opacity: .4;
+				}
+
+				@media (max-width: 1023px) {
+					.info-link:hover,
+					.info-link:focus {
+						opacity: 1;
+					}
+				}
+
+				.info-txt {
+					letter-spacing: 1.7px;
+				}
+
+        .screen-mobile .Rellotge_1.disable,
+        .screen-mobile .Rellotge_2.disable,
+        .screen-mobile .Rellotge_3.disable {
+          opacity: 1;
+          pointer-events: none;
+        }
+
+        .info-link,
+        .rellotge1-link,
+        .rellotge2-link,
+        .rellotge2-link-active,
+        .rellotge3-link,
+        .close-link,
+        .close-link_1_,
+        .close-link_2_,
+        .close-link_3_ {
+          cursor: pointer;
+        }
+
+        .info-txt,
+        .rellotge1-txt,
+        .rellotge2-txt,
+        .rellotge3-txt {
+          pointer-events: none;
+          position: relative;
+          margin-top: 20px;
+          opacity: 0;
+          z-index: 0;
+
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+        }
+
+        .info-txt.active ,
+        .active .rellotge1-txt,
+        .active .rellotge2-txt,
+        .active .rellotge3-txt {
+          pointer-events: inherit;
+          margin-top: 0;
+          opacity: 1;
+          z-index: 9;
+        }
+
+        .Rellotge_2 .Rellotge2-active {
+          display: none;
+        }
+
+        .Rellotge_2.active .Rellotge2-active {
+          display: block;
+        }
+        .rellotge1-click rect,
+        .rellotge2-click rect,
+        .rellotge2-click_2_ rect,
+        .rellotge3-click rect {
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+
+              -webkit-transform: translateY(0px);
+              -moz-transform: translateY(0px);
+              -o-transform: translateY(0px);
+              transform: translateY(0px);
+        }
+        .active .rellotge1-click rect,
+        .active .rellotge2-click rect,
+        .active .rellotge2-click_2_ rect,
+        .active .rellotge3-click rect {
+              -webkit-transform: translateY(18px);
+              -moz-transform: translateY(18px);
+              -o-transform: translateY(18px);
+              transform: translateY(18px);
+        }
+      </style>
+      <g class="footer">
+        <g class="logo_bici-arbre">
+          <rect x="197.3" y="4036" class="st0" width="112.1" height="333.9"/>
+          <rect x="183.8" y="4294.4" class="st1" width="26.7" height="76.9"/>
+          <g>
+            <g>
+              <circle class="st2" cx="311.8" cy="4343.8" r="26.2"/>
+              <circle class="st2" cx="220.5" cy="4343.8" r="26.2"/>
+              <polyline class="st3" points="297.8,4302.5 260.4,4343.8 219.3,4343.8 244.3,4295.8 295.4,4295.8        "/>
+              <line class="st3" x1="259" y1="4343.8" x2="241" y2="4285.2"/>
+              <line class="st4" x1="250.3" y1="4283.3" x2="227.6" y2="4283.3"/>
+              <polyline class="st4" points="309.2,4339.4 292.4,4285.2 309.2,4285.2        "/>
+              <path class="st4" d="M309.2,4285.2c4.7,0,8.5,3.8,8.5,8.5c0,4.7-3.8,8.5-8.5,8.5"/>
+              <path class="st4" d="M314.3,4343.8c0,0-3.1,0.5-4.5-3.5"/>
+            </g>
+            <circle class="st1" cx="261.1" cy="4343.8" r="8.1"/>
+          </g>
+          <circle class="st5" cx="200.2" cy="4227.5" r="75"/>
+        </g>
+        <rect class="linia_bottom" x="100" y="4007" width="1240" height="3"/>
+        <rect x="370" y="4066.4" class="st6" width="988" height="356"/>
+        <text transform="matrix(1 0 0 1 370 4096.6304)"><tspan x="0" y="0" class="st1 st7 st8">LA PLANIFICACIÓN URBANA Y DEL TRANSPORTE </tspan><tspan x="0" y="48" class="st1 st7 st8">influye en el nivel de actividad física de la ciudadanía y, </tspan><tspan x="0" y="96" class="st1 st7 st8">por tanto, en nuestra salud. Necesitamos ciudades que </tspan><tspan x="0" y="144" class="st1 st7 st8">prioricen el transporte a pie y en bicicleta, que cuenten </tspan><tspan x="0" y="192" class="st1 st7 st8">con espacios verdes y faciliten el desplazamiento activo </tspan><tspan x="0" y="240" class="st1 st7 st8">y/o en transporte público, así como realizar deporte.  </tspan></text>
+      </g>
+      <g class="main-content">
+        <g class="Rellotge_3">
+          <text transform="matrix(1 0 0 1 792.1263 3249.9785)" class="st9 st10 st11">de actividad física</text>
+          <text transform="matrix(1 0 0 1 792.1263 3331.1445)" class="st9 st10 st11">moderada*</text>
+          <text transform="matrix(1 0 0 1 1117.8129 3331.1445)" class="st12 st10 st11"> </text>
+          <text transform="matrix(1 0 0 1 1128.0101 3331.1445)" class="st1 st10 st11">la mayoría </text>
+          <text transform="matrix(1 0 0 1 792.1263 3412.1074)" class="st1 st10 st11">de días de la semana</text>
+          <text transform="matrix(1 0 0 1 792.1263 3011.3799)" class="st1 st10 st13">30 minutos</text>
+          <text transform="matrix(1 0 0 1 792.1263 3135.5781)" class="st1 st10 st13">o más</text>
+          <g class="Rellotge_3_">
+            <path class="st1" d="M419.5,2862.6c-177,0-320.3,142.8-320.3,318.7S242.7,3500,419.5,3500s320.3-142.8,320.3-318.7
+              C739.8,3005.4,596.3,2862.6,419.5,2862.6z M419.5,3452.9c-150.7,0-272.7-121.4-272.7-271.4c0-149.9,122.1-271.4,272.7-271.4
+              s272.7,121.4,272.7,271.4C692.3,3331.4,570.2,3452.9,419.5,3452.9z"/>
+            <path class="st1" d="M419.5,3147.8c-18.8,0-33.8,15-33.8,33.7s15.1,33.7,33.8,33.7s33.8-15,33.8-33.7
+              C453.4,3162.8,438.1,3147.8,419.5,3147.8z"/>
+            <polygon class="st1" points="568,2907.2 601.7,2855.8 666,2897.6 632.3,2949      "/>
+            <g class="rellotge3-click">
+              <rect x="389.2" y="2778" class="st1" width="60.5" height="94.1"/>
+              <rect x="366.9" y="2740.2" class="st1" width="105" height="55.4"/>
+              <path class="st1" d="M419.5,2669.4c-51.5,0-93,41.6-93,92.6s41.8,92.6,93,92.6c51.5,0,93-41.6,93-92.6S471,2669.4,419.5,2669.4z
+                 M419.5,2837c-41.6,0-75.4-33.7-75.4-75.1s33.8-75.1,75.4-75.1s75.4,33.7,75.4,75.1S461.1,2837,419.5,2837z"/>
+            </g>
+            <path class="st1" d="M398.1,3155.7c-14.3,11.9-16.1,33.3-4.1,47.5s33.5,16,47.8,4c14.3-11.9,16.1-33.3,4.1-47.5
+              C433.8,3145.5,412.2,3143.6,398.1,3155.7z"/>
+            <polygon class="st1" points="428,3160.2 397.5,3185.9 256.1,2988.7       "/>
+            <path class="st5" d="M419.9,2933.6v187.8c33.1,0.2,60,26.9,60,60s-27.1,60-60.3,60s-60.3-26.9-60.3-60c0-5.2,0.8-10.2,1.9-15.2
+              L243.5,3006c-45.3,44.8-73.1,107-73.1,175.5c0,136.8,111.6,247.9,249.1,247.9s249.1-111,249.1-247.9
+              C668.7,3044.7,557.2,2933.8,419.9,2933.6z"/>
+          </g>
+          <rect class="rellotge3-link st14" x="100" y="2582.8" width="1242.5" height="1030.6"/>
+          <g class="rellotge3-txt st15">
+            <rect class="bg-txt_3_ st16" x="102" y="2597.1" width="1237.7" height="1076.9"/>
+            <rect x="102.1" y="2597.1" width="38.7" height="1076.9"/>
+            <rect x="161.9" y="2690.7" class="st6" width="1120.2" height="419.7"/>
+            <g class="close-link_3_">
+              <rect class="bg-close_3_" x="1254.2" y="2596.1" width="85" height="85"/>
+              <path class="ico-close_3_ st17" d="M1321,2653.1l-9.8,9.8l-14.6-14.4l-14.4,14.4l-9.8-9.8l14.4-14.4l-14.4-14.6l9.8-9.8
+                l14.4,14.4l14.6-14.4l9.8,9.8l-14.4,14.4L1321,2653.1z"/>
+            </g>
+            <rect x="258.3" y="2877.3" class="st6" width="951.7" height="591.1"/>
+            <text transform="matrix(1 0 0 1 180.8999 2866.5364)" class="st17 st18 st19">¡Enhorabuena!</text>
+            <text transform="matrix(1 0 0 1 180.8999 3062.5208)" class="st17 st18 st19">Estás cumpliendo con la recomendación de la</text>
+            <text transform="matrix(1 0 0 1 180.8999 3127.8489)" class="st17 st18 st19">OMS de realizar al menos 30 minutos de</text>
+            <text transform="matrix(1 0 0 1 180.8999 3193.175)" class="st17 st18 st19">actividad física moderada la mayoría de días</text>
+            <text transform="matrix(1 0 0 1 180.8999 3258.5032)" class="st17 st18 st19">de la semana. Las personas activas tienen un</text>
+            <text transform="matrix(1 0 0 1 180.8999 3323.8313)" class="st17 st18 st19">20-30% menos de riesgo de mortalidad</text>
+            <text transform="matrix(1 0 0 1 180.8999 3389.1594)" class="st17 st18 st19">prematura.</text>
+          </g>
+        </g>
+        <g class="Rellotge_2">
+          <text transform="matrix(1 0 0 1 797.4357 2259.2417)" class="st12 st10 st20">de actividad física</text>
+          <text transform="matrix(1 0 0 1 797.4357 2336.5962)" class="st12 st10 st20">moderada* </text>
+          <text transform="matrix(1 0 0 1 1117.547 2336.5962)" class="st1 st10 st20">la mayoría </text>
+          <text transform="matrix(1 0 0 1 797.4357 2413.7573)" class="st1 st10 st20">de días de la semana</text>
+          <text transform="matrix(1 0 0 1 797.4357 2031.85)" class="st1 st10 st21 st22">Menos de</text>
+          <text transform="matrix(1 0 0 1 797.4357 2150.2153)" class="st1 st10 st21 st22">30 minutos</text>
+          <g class="Rellotge_2_">
+            <path class="st1" d="M419.5,1858.9c-176.9,0-320.3,142.7-320.3,318.7s143.4,318.7,320.3,318.7s320.3-142.7,320.3-318.7
+              S596.4,1858.9,419.5,1858.9z M419.5,2448.8c-150.6,0-272.6-121.4-272.6-271.2s122-271.2,272.6-271.2s272.6,121.4,272.6,271.2
+              C692.2,2327.4,570.1,2448.8,419.5,2448.8z"/>
+            <polygon class="st1" points="568.1,1903.4 601.9,1852 666.2,1893.8 632.5,1945.2      "/>
+            <g class="rellotge2-click">
+              <rect x="389.2" y="1774.3" class="st1" width="60.5" height="94.1"/>
+              <rect x="367" y="1736.5" class="st1" width="105.1" height="55.6"/>
+              <path class="st1" d="M419.5,1665.7c-51.4,0-93,41.4-93,92.5s41.6,92.5,93,92.5s93-41.4,93-92.5S470.9,1665.7,419.5,1665.7z
+                 M419.5,1833.3c-41.6,0-75.5-33.5-75.5-75.1c0-41.4,33.7-75.1,75.5-75.1s75.5,33.5,75.5,75.1
+                C494.8,1799.7,461.2,1833.3,419.5,1833.3z"/>
+            </g>
+            <path class="st1" d="M451.8,2172.7c-3.3-18.2-21-30.4-39.3-27.1c-18.3,3.3-30.6,20.9-27.2,39.1c3.3,18.2,21,30.4,39.3,27.1
+              C442.9,2208.6,455.1,2190.9,451.8,2172.7z"/>
+            <polygon class="st1" points="433,2196.4 425.8,2157.3 667.8,2133.2       "/>
+            <path class="st23" d="M465.3,2138.5l195.6-19.2l0.6-0.2c-26.5-108.6-124.7-189.4-242.1-189.4v187.8
+              C437.8,2117.6,454.2,2125.7,465.3,2138.5z"/>
+          </g>
+          <rect class="rellotge2-link st14" x="99.2" y="1569.6" width="1243.4" height="1012.7"/>
+          <g class="rellotge2-txt st15">
+            <rect class="bg-txt_2_ st24" x="102" y="1568.9" width="1241.6" height="1110.2"/>
+            <rect x="102" y="1568.9" width="38.8" height="1110.2"/>
+            <rect x="162.1" y="1662.5" class="st6" width="1123.7" height="419.8"/>
+            <g class="close-link_2_">
+              <rect class="bg-close_2_" x="1255.7" y="1574.9" width="85" height="85"/>
+              <path class="ico-close_2_ st17" d="M1322.5,1631.9l-9.8,9.8l-14.6-14.4l-14.4,14.4l-9.8-9.8l14.4-14.4l-14.4-14.6l9.8-9.8
+                l14.4,14.4l14.6-14.4l9.8,9.8l-14.4,14.4L1322.5,1631.9z"/>
+            </g>
+            <rect x="283.4" y="1712.5" class="st6" width="1019.8" height="821.4"/>
+            <text transform="matrix(1 0 0 1 180.3037 1714.7396)" class="st17 st18 st25">La OMS recomienda realizar al menos 30 minutos </text>
+            <text transform="matrix(1 0 0 1 180.3037 1781.0267)" class="st17 st18 st25">de actividad física moderada la mayoría de días </text>
+            <text transform="matrix(1 0 0 1 180.3037 1853.6049)" class="st17 st18 st25">de la semana. </text>
+            <text transform="matrix(1 0 0 1 180.3037 1979.8949)" class="st17 st18 st25">Llegarás a este objetivo sin demasiado esfuerzo si </text>
+            <text transform="matrix(1 0 0 1 180.3037 2046.1838)" class="st17 st18 st25">integras la actividad física en tu rutina diaria: ir en </text>
+            <text transform="matrix(1 0 0 1 180.3037 2112.4739)" class="st17 st18 st25">bicicleta a trabajar, hacer los trayectos cortos </text>
+            <text transform="matrix(1 0 0 1 180.3037 2178.762)" class="st17 st18 st25">caminando o usar el transporte público son formas </text>
+            <text transform="matrix(1 0 0 1 180.3037 2245.052)" class="st17 st18 st25">de conseguirlo. Hay apps que cuentan los pasos</text>
+            <text transform="matrix(1 0 0 1 180.3037 2317.6311)" class="st17 st18 st25">y el ejercicio que haces y te pueden ayudar. </text>
+            <text transform="matrix(1 0 0 1 180.3037 2443.9192)" class="st17 st18 st25">Ten en cuenta que las personas físicamente </text>
+            <text transform="matrix(1 0 0 1 180.3037 2510.2092)" class="st17 st18 st25">inactivas tienen un 20-30% más de riesgo de </text>
+            <text transform="matrix(1 0 0 1 180.3037 2580.2192)" class="st17 st18 st25">mortalidad prematura.</text>
+          </g>
+        </g>
+        <g class="Rellotge_1">
+          <text transform="matrix(0.9985 0 0 1 793.9121 1335.5824)" class="st1 st10 st26 st27">física</text>
+          <text transform="matrix(0.9985 0 0 1 793.9121 1186.599)" class="st1 st10 st26 st27">actividad</text>
+          <text transform="matrix(0.9985 0 0 1 793.9121 1037.3705)" class="st1 st10 st26 st27">No hago</text>
+          <g class="Rellotge_1_">
+            <path class="st1" d="M419.6,849.8c-173.8,0-314.8,141.1-314.8,315.1s141,315.1,314.8,315.1s314.8-141.1,314.8-315.1
+              S593.4,849.8,419.6,849.8z M419.6,1433.1c-148,0-267.9-120-267.9-268.2s119.9-268.2,267.9-268.2s267.9,120,267.9,268.2
+              S567.6,1433.1,419.6,1433.1z"/>
+            <path class="st1" d="M419.6,1131.6c-18.4,0-33.3,14.9-33.3,33.3s14.9,33.3,33.3,33.3s33.3-14.9,33.3-33.3
+              S438,1131.6,419.6,1131.6z"/>
+            
+              <rect x="583.5" y="851.3" transform="matrix(0.5464 -0.8375 0.8375 0.5464 -466.2065 917.415)" class="st1" width="60.7" height="75.6"/>
+            <g class="rellotge1-click">
+              <rect x="389.8" y="766.2" class="st1" width="59.5" height="93"/>
+              <rect x="368" y="728.9" class="st1" width="103.3" height="54.9"/>
+              <path class="st1" d="M419.6,658.8c-50.5,0-91.4,41-91.4,91.5s40.9,91.5,91.4,91.5s91.4-41,91.4-91.5S470.1,658.8,419.6,658.8z
+                 M419.6,824.6c-40.9,0-74.2-33.1-74.2-74.3c0-41,33.1-74.3,74.2-74.3s74.2,33.1,74.2,74.3C493.8,791.3,460.5,824.6,419.6,824.6z
+                "/>
+            </g>
+            <polygon class="st1" points="439.3,1154 399.9,1154 419.6,915.7      "/>
+          </g>
+          <rect class="rellotge1-link st14" x="102" y="585.4" width="1225.6" height="976.5"/>
+          <g class="rellotge1-txt st15">
+            <rect class="bg-txt_1_ st24" x="105.7" y="607.2" width="1233.8" height="1110.1"/>
+            <rect x="105.7" y="607.2" width="38.6" height="1110.1"/>
+            <rect x="165.4" y="700.6" class="st6" width="1116.6" height="419"/>
+            <g class="close-link_1_">
+              <rect class="bg-close_1_" x="1255.7" y="607.2" width="85" height="85"/>
+              <path class="ico-close_1_ st17" d="M1322.5,664.2l-9.8,9.8l-14.6-14.4l-14.4,14.4l-9.8-9.8l14.4-14.4l-14.4-14.6l9.8-9.8
+                l14.4,14.4l14.6-14.4l9.8,9.8l-14.4,14.4L1322.5,664.2z"/>
+            </g>
+            <rect x="285.9" y="750.5" class="st6" width="1015.4" height="819.9"/>
+            <text transform="matrix(1 0 0 1 180.3037 743.3285)" class="st17 st18 st28">La OMS recomienda realizar al menos 30 minutos </text>
+            <text transform="matrix(1 0 0 1 180.3037 809.9642)" class="st17 st18 st28">de actividad física moderada la mayoría de días </text>
+            <text transform="matrix(1 0 0 1 180.3037 876.601)" class="st17 st18 st28">de la semana. </text>
+            <text transform="matrix(1 0 0 1 180.3037 1009.8763)" class="st17 st18 st28">Llegarás a este objetivo sin demasiado esfuerzo si </text>
+            <text transform="matrix(1 0 0 1 180.3037 1076.514)" class="st17 st18 st28">integras la actividad física en tu rutina diaria: ir en </text>
+            <text transform="matrix(1 0 0 1 180.3037 1143.1508)" class="st17 st18 st28">bicicleta a trabajar, hacer los trayectos cortos </text>
+            <text transform="matrix(1 0 0 1 180.3037 1209.7885)" class="st17 st18 st28">caminando o usar el transporte público son formas </text>
+            <text transform="matrix(1 0 0 1 180.3037 1276.4271)" class="st17 st18 st28">de conseguirlo. Hay apps que cuentan los pasos y </text>
+            <text transform="matrix(1 0 0 1 180.3037 1343.0648)" class="st17 st18 st28">el ejercicio que haces y te pueden ayudar. </text>
+            <text transform="matrix(1 0 0 1 180.3037 1476.3383)" class="st17 st18 st28">Ten en cuenta que las personas físicamente </text>
+            <text transform="matrix(1 0 0 1 180.3037 1542.976)" class="st17 st18 st28">inactivas tienen un 20-30% más de riesgo de </text>
+            <text transform="matrix(1 0 0 1 180.3037 1619.6127)" class="st17 st18 st28">mortalidad prematura.</text>
+          </g>
+        </g>
+      </g>
+      <g class="header">
+        <rect class="linia_top" x="100" y="516.4" width="1240" height="3"/>
+        <rect x="100" y="113.3" class="st6" width="1240" height="270"/>
+        <text transform="matrix(1 0 0 1 100 430.8812)" class="st1 st10 st29 st30">haces a la semana?</text>
+        <text transform="matrix(1 0 0 1 100 310.3646)" class="st1 st10 st29 st30">actividad física moderada </text>
+        <text transform="matrix(1 0 0 1 100 189.8475)" class="st1 st10 st29 st30">¿Cuántos minutos de</text>
+        <g class="info-txt st15">
+          <rect class="bg-txt st16" x="43.2" y="465.1" width="1362.8" height="763.9"/>
+          <rect x="109.1" y="551.8" class="st6" width="1233.5" height="576.2"/>
+          <text transform="matrix(1 0 0 1 109.0581 582.7606)" class="st17 st31 st32">Según la Organización Mundial de la Salud (OMS),</text>
+          <text transform="matrix(1 0 0 1 109.0581 641.3431)" class="st17 st31 st32">la actividad física moderada requiere un esfuerzo</text>
+          <text transform="matrix(1 0 0 1 109.0581 699.9247)" class="st17 st31 st32">moderado, que acelera de forma perceptible el</text>          
+          <text transform="matrix(1 0 0 1 109.0581 759.9247)" class="st17 st31 st32">ritmo cardiaco.</text>
+          <text transform="matrix(1 0 0 1 109.0581 867.0887)" class="st17 st10 st32">Ejemplos:</text>
+          <text transform="matrix(1 0 0 1 109.0581 925.6713)" class="st17 st31 st32">Caminar a paso rápido, realizar tareas domésticas,</text>
+          <text transform="matrix(1 0 0 1 109.0581 994.2543)" class="st17 st31 st32">bailar, participar de forma activa en juegos y</text>
+          <text transform="matrix(1 0 0 1 109.0581 1052.8363)" class="st17 st31 st32">deportes con niños y paseos con animales </text>
+          <text transform="matrix(1 0 0 1 109.0581 1111.4183)" class="st17 st31 st32">domésticos, trabajos de construcción generales,</text>
+          <text transform="matrix(1 0 0 1 109.0581 1171.4183)" class="st17 st31 st32">desplazamiento de cargas moderadas (&lt; 20 kg), etc.</text>
+          <g class="close-link">
+            <rect class="bg-close" x="1313.3" y="465.1" width="92.7" height="92.7"/>
+            <path class="ico-close st17" d="M1385.8,527.3l-10.6,10.6l-16-15.7l-15.7,15.7l-10.6-10.6l15.7-15.7l-15.7-16l10.6-10.6
+              l15.7,15.7l16-15.7l10.6,10.6l-15.7,15.7L1385.8,527.3z"/>
+          </g>
+        </g>
+        <text class="info-link st16 st33 st29" transform="matrix(1 0 0 1 1258.8154 310.3646)">(i)</text>
+      </g>
+    </svg>
+	</div>
+</body>
+</html>
