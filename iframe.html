@@ -11,26 +11,49 @@
 	<body>
 		<!-- Aquesta linia script s'ha de posar abans del iframe -->
 		<script>
-		  function resizeIframe(obj) {
-		    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-		  }
+			function setIframeHeightCO(id, height) {
+				var obj = document.getElementById(id);
+				obj.style.height = height + 'px';
+			}
+		  
+			// iframed document sends its height using postMessage
+			function handleDocHeightMsg(e) {
+				console.log(e)
+				// check origin
+				if ( e.origin === 'https://comunicacio.github.io' ) {
+					// parse data
+					var data = JSON.parse( e.data );
+					// check data object
+					if ( data['id'] && data['docHeight'] ) {
+						//iframe id and iframe height
+						setIframeHeightCO( data['id'], data['docHeight'] );
+					} 
+				}
+			}
+
+			// assign message handler
+			if ( window.addEventListener ) {
+				window.addEventListener('message', handleDocHeightMsg, false);
+			} else if ( window.attachEvent ) { // ie8
+				window.attachEvent('onmessage', handleDocHeightMsg);
+			}
 		</script>
 		<!-- Aquesta linia script s'ha de posar abans del iframe -->
-		
+
 		<!-- Actividad fisica -->
-		<iframe src="https://comunicacio.github.io/animacions/animacions/actividad-fisica.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
+		<iframe id="actividad-fisica" src="https://comunicacio.github.io/animacions/animacions/actividad-fisica.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
 		<!-- Actividad fisica -->
 
 		<hr>
-		
+
 		<!-- Aire ciudades -->
-		<iframe src="https://comunicacio.github.io/animacions/animacions/aire-ciudades.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
+		<iframe id="aire-ciutats" src="https://comunicacio.github.io/animacions/animacions/aire-ciudades.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
 		<!-- Aire ciudades -->
 
 		<hr>
 
 		<!-- Ciudades ruidosas -->
-		<iframe src="https://comunicacio.github.io/animacions/animacions/ciudades-ruidosas.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
+		<iframe id="ciutats-sorolloses" src="https://comunicacio.github.io/animacions/animacions/ciudades-ruidosas.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;" onload="resizeIframe(this)"></iframe>
 		<!-- Ciudades ruidosas -->
 	</body>
 </html>
