@@ -323,9 +323,11 @@ information on noise pollution by means of <strong>noise maps</strong> (in Barce
 
 			// send docHeight onload
 			function sendDocHeightMsg(e) {
-				var ht = getDocHeight();
-				var id = 'solucions'; //iframe id
-				parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				setTimeout(function(){
+					var ht = getDocHeight();
+					var id = 'solucions'; //iframe id
+					parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				}, 400);
 			}
 
 			// assign onload handler 

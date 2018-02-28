@@ -220,9 +220,11 @@
 
 			// send docHeight onload
 			function sendDocHeightMsg(e) {
-				var ht = getDocHeight();
-				var id = 'solucions-activitat-fisica'; //iframe id
-				parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				setTimeout(function(){
+					var ht = getDocHeight();
+					var id = 'solucions-activitat-fisica'; //iframe id
+					parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				}, 400);
 			}
 
 			// assign onload handler 
