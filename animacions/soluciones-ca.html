@@ -328,10 +328,10 @@
 			// assign onload handler 
 			if ( window.addEventListener ) {
 				window.addEventListener('load', sendDocHeightMsg, false);
-				window.addEventListener('click', sendDocHeightMsg, false);
+				window.addEventListener('resize', sendDocHeightMsg, false);
 			} else if ( window.attachEvent ) { // ie8
 				window.attachEvent('onload', sendDocHeightMsg);
-				window.attachEvent('onclick', sendDocHeightMsg);
+				window.attachEvent('onresize', sendDocHeightMsg);
 			}
 		</script>
 </body>
