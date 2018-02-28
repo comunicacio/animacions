@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Descripció">
+	<meta name="keywords" content="Paraules clau">
+	<title>Solucions</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="soluciones.js"></script>
+	<link rel="stylesheet" href="animacions.css">
+</head>
+
+<body style="overflow: hidden">
+	<div id="solucions" class="graphic-container">
+			<style type="text/css">
+
+				body {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.titol-principal {
+					font-family:'Platform'; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+					font-size: 250%;
+					line-height: 94%;
+				}
+				.titol {
+					font-family:'Platform'; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+					font-size: 170%;
+					line-height: 94%;
+				}
+				p {
+					margin: 0;
+					margin-bottom: 10px;
+				}
+				.toggle-cont {
+					position: relative;
+					border-top: 10px solid #000;
+					background: #3aa336;
+					margin-bottom: 20px;
+					color: #fff;
+					font-family:'georgia'; font-weight: 300;
+				}
+				.toggle-btn {
+					position: absolute;
+					width: 100px;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					background: #aecf98 url(images/ico-btn-toggle.svg) no-repeat center center;
+					background-size: 40% auto;
+					cursor: pointer;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				.active .toggle-btn {
+					background: #aecf98 url(images/ico-btn-toggle-active.svg) no-repeat center center;
+					background-size: 40% auto;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-btn,
+					.active .toggle-btn {
+						width: 40px;
+						background-size: 60% auto;
+					}					
+				}
+				.toggle-header {
+					position: relative;
+					width: 100%;
+					padding: 20px 30px;
+					padding-right: 100px;
+					box-sizing: border-box;
+					cursor: pointer;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 767px) {
+					.toggle-header {
+						padding-right: 70px;
+					}					
+				}
+				.toggle-header .titol {
+					margin: 0;
+					margin-bottom: 10px;
+				}
+				.toggle-header .pregunta {
+					margin: 0;
+					max-width: 400px;
+					font-size: 130%;
+				}
+				.toggle-body {
+					width: 100%;
+					padding: 0 30px;
+					padding-right: 140px;
+					overflow: hidden;
+					height: auto;
+					max-height: 0;
+					box-sizing: border-box;
+
+					transition: all .4s ease-in-out;
+					-moz-transition: all .4s ease-in-out;
+					-webkit-transition: all .4s ease-in-out;
+					-o-transition: all .4s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-body {
+						padding-right: 80px;
+					}					
+				}
+				.active .toggle-body {
+					max-height: 2000px;
+
+					transition: all .6s ease-in-out;
+					-moz-transition: all .6s ease-in-out;
+					-webkit-transition: all .6s ease-in-out;
+					-o-transition: all .6s ease-in-out;
+				}
+				.toggle-body-cont {
+					border-top: 2px solid #000;
+					padding: 20px 0;
+					width: calc(100% - 30px);
+					padding-right: 40px;
+				}
+				@media (max-width: 1023px) {
+					.toggle-body-cont {
+						width: 100%;
+						padding-right: 0;
+					}					
+				}
+				.toggle-img {
+					pointer-events: none;
+					position: absolute;
+					right: 200px;
+			    top: 50%;
+    			transform: translateY(-50%);
+			    width: 16%;
+			    opacity: 0;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-img {
+						right: 70px;
+					}					
+				}
+				@media (max-width: 767px) {
+					.toggle-img {
+			    	display: none;
+					}					
+				}
+				.active .toggle-img {
+			    opacity: 1;
+				}
+				.contaminacio .toggle-img {
+    			width: 22%;
+			  }
+				.activitatfisica .toggle-img {
+    			width: 18%;
+			  }
+				.temperatura .toggle-img {
+    			width: 15%;
+			  }
+				.espaisnaturals .toggle-img {
+    			width: 17%;
+			  }
+				.toggle-body a {
+					color: #000;
+					text-decoration: underline;
+				}
+			</style>
+
+			<h1 class="titol-principal">5 claus per a la creació d'entorns urbans saludables</h1>
+			
+			<!-- Contaminacio -->
+			<div class="toggle-cont contaminacio">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Contaminació de l'aire</h2>
+					<p class="pregunta">Com podem millorar la qualitat de l'aire a les nostres ciutats?</p>
+					<img class="toggle-img" src="images/ico-contaminacio.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p><strong>Les ciutats tenen moltes solucions disponibles per reduir la contaminació de l'aire. Es poden aplicar diferents mesures segons les característiques pròpies de cada ciutat. Aquestes són algunes de les línies d'actuació:</strong>
+							<ul>
+								<li><strong>Ciutats per a vianants i ciclistes</strong>. Les ciutats fetes per a les persones -amb espais delimitats, zones verdes- permeten desplaçaments més segurs, fàcils, agradables i saludables.</li>
+								<li><strong>La reducció del trànsit motoritzat</strong>. Les ciutats construïdes principalment al voltant dels viatges en automòbil generen contaminació i fomenten estils de vida poc saludables.</li>
+								<li><strong>El transport públic com a columna vertebral</strong>. Millorar la xarxa de transport públic i fomentar el seu ús redueix considerablement la contaminació atmosfèrica en disminuir l'ús de vehicles privats i les seves emissions.</li>
+							</ul>
+						</p>
+						<p><strong>Pots consultar <a href="#">les solucions integrals que proposa l'OMS</a> i les que estan impulsant ajuntaments com el de <a href="#">Madrid</a> o <a href="#">Barcelona</a></strong></p>
+					</div>
+				</div>
+			</div>
+			<!-- Contaminacio -->
+
+			<!-- Soroll -->
+			<div class="toggle-cont soroll">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Soroll</h2>
+					<p class="pregunta">Com podem reduir el soroll a les nostres ciutats?</p>
+					<img class="toggle-img" src="images/ico-soroll.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p><strong>La planificació urbana pot tenir un paper important per disminuir els nivells de soroll i promoure estils de vida saludables:</strong>
+							<ul>
+								<li>Les poblacions de més de 100.000 habitants de la Unió Europea <a href="#">han de notificar</a> la contaminació acústica mitjançant <strong>mapes de soroll</strong> (a Barcelona, per exemple, el <a href="#">mapa</a> també està disponible per a la ciutadania, que pot comprovar el nivell de soroll del seu carrer).</li>
+								<li>També s'han de realitzar <a href="#">plans d'acció</a> <strong>per reduir el soroll a les zones més afectades.</strong> Algunes de les estratègies més freqüents són:
+									<ul>
+										<li>L'ús de paviment sonoreductor a les calçades</li>
+										<li>El límit del volum de trànsit</li>
+										<li>La disminució dels límits de velocitat</li>
+										<li>La promoció de zones silencioses -per exemple, espais verds</li>
+									</ul>
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Soroll -->
+
+			<!-- ActivitatFisica -->
+			<div class="toggle-cont activitatfisica">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Activitat física</h2>
+					<p class="pregunta">Com podem augmentar el nivell d'activitat física a les ciutats?</p>
+					<img class="toggle-img" src="images/ico-activitatfisica.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p><strong>El disseny urbà i del transport són claus per augmentar l'activitat física:</strong>
+							<ul>
+								<li>El <strong>transport actiu</strong> –desplaçar-se a peu o amb bicicleta- en el dia a dia és la forma més pràctica i sostenible d'augmentar l'activitat física.</li>
+								<li>Una bona xarxa de <strong>transport públic</strong> facilita que la ciutadania camini i redueixi l'ús del vehicle privat.</li>
+								<li>És important la disponibilitat dels <strong>espais verds</strong> per realitzar activitat física de forma segura.</li>
+							</ul>
+						</p>
+						<p><strong>Aquestes mesures es recullen en aquest <a href="#">estudi</a> publicat a <em>The Lancet</em>, que analitza l'activitat física en 14 ciutats.</strong></p>
+					</div>
+				</div>
+			</div>
+			<!-- ActivitatFisica -->
+
+			<!-- Temperatura -->
+			<div class="toggle-cont temperatura">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Temperatura</h2>
+					<p class="pregunta">Com podem reduir les illes de calor a les nostres ciutats?</p>
+					<img class="toggle-img" src="images/ico-temperatura.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p><strong>La planificació urbana i del transport ha d'incorporar de forma prioritària la prevenció de l'efecte de les "illes de calor".</strong>
+							<ul>
+								<li><strong>La millora de l'aïllament dels edificis</strong> és fonamental per dependre menys de l’aire condicionat.</li>
+								<li><strong>El canvi dels materials urbans</strong> per altres que absorbeixin menys la radiació solar.</li>
+								<li><strong>L'augment de la vegetació urbana</strong> fa que hi hagi més ombres i menys temperatura radiant.</li>
+								<li><strong>La reducció de la calor</strong> que es produeix per activitats humanes (calefacció, etc.) ajudarà també a reduir l'efecte de les illes de calor.</li>
+							</ul>
+						</p>
+						<p><strong>Hi ha diversos plans de mitigació, com la guia "<a href="#">"Reducció de les illes de calor urbanes: Compendi d'estratègies</a>"</strong> de l'Agència de Protecció Ambiental dels Estats Units.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Temperatura -->
+
+			<!-- EspaisNaturals -->
+			<div class="toggle-cont espaisnaturals">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Espais naturals</h2>
+					<p class="pregunta">Com s'ha de donar prioritat als espais verds i blaus a les ciutats?</p>
+					<img class="toggle-img" src="images/ico-espaisnaturals.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p>El camí a seguir és la <strong>'renaturalització' de la ciutat</strong> i la <strong>connexió dels diferents espais naturals urbans</strong>:
+							<ul>
+								<li>Els espais naturals han d'estar <strong>distribuïts per tot el municipi</strong> perquè els beneficis arribin a tota la ciutadania.</li>
+								<li><strong>Zones verdes i blaves connectades</strong> entre si. Així es fomenta l'ús d'aquests espais per a desplaçar-se.</li>
+								<li>La <strong>promoció i millora dels espais naturals existents</strong> i, on sigui necessari, <strong>habilitar-ne de nous</strong> a partir de solars desocupats, teulades, balcons, etc.</li>
+								<li>Espais naturals aptes per a <strong>diferents usos</strong> -relaxació, activitats socials, activitat física, entre d'altres- perquè els beneficis siguin tant per a la salut mental com la física.</li>
+								<li>A més, aquests haurien d'estar pensats per a l'ús diferent que els <strong>grups de població</strong> vagin a donar-los: nens, joves, grans, etc.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- EspaisNaturals -->
+		
+	</div>
+		<script>
+			// Get height of document
+			function getDocHeight(doc) {
+				doc = doc || document;
+				var body = doc.body, html = doc.documentElement;
+				var height = Math.max( body.scrollHeight, body.offsetHeight, 
+					html.clientHeight, html.scrollHeight, html.offsetHeight );
+				return height;
+			}
+
+			// send docHeight onload
+			function sendDocHeightMsg(e) {
+				var ht = getDocHeight();
+				var id = 'solucions'; //iframe id
+				parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+			}
+
+			// assign onload handler 
+			if ( window.addEventListener ) {
+				window.addEventListener('load', sendDocHeightMsg, false);
+			} else if ( window.attachEvent ) { // ie8
+				window.attachEvent('onload', sendDocHeightMsg);
+			}
+		</script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 1451.3" style="enable-background:new 0 0 1440 1451.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4F4F4;}
+	.st1{fill:#181716;}
+	.st2{fill:#E3D5E9;}
+	.st3{fill:#F1EAF5;}
+	.st4{fill:#F8D2D0;}
+	.st5{fill:#D5BFDD;}
+	.st6{fill:none;stroke:#BB94C2;stroke-width:6.0014;stroke-miterlimit:10;}
+	.st7{fill:#BB94C2;}
+	.st8{fill:none;}
+	.st9{font-family:'Platform'; font-weight: 300; letter-spacing: 1px;}
+	.st10{font-size:24.0054px;}
+	.st11{letter-spacing:1;}
+	.st12{font-size:33.0075px;}
+	.st13{fill:none;stroke:#181716;stroke-width:1.5003;stroke-miterlimit:10;}
+@font-face {
+  font-family: 'Platform';
+  src: url('../fonts/Platform-Regular.eot');
+  src: url('../fonts/Platform-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Platform-Regular.woff') format('woff'),
+  url('../fonts/Platform-Regular.ttf') format('truetype'),
+  url('../fonts/Platform-Regular.otf') format('opentype'),
+  url('../fonts/Platform-Regular.svg#Platform-Regular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+</style>
+<g id="bg">
+	<rect y="0" class="st0" width="1440" height="1452.7"/>
+	<rect y="1245.3" class="st1" width="1440" height="207.3"/>
+</g>
+<g id="cos">
+	<g>
+		<g>
+			<path class="st2" d="M721.8,57.4c-0.4,0-0.7,0-1,0c-0.3,0-0.7,0-1,0c-44.9-0.4-62.4,35.1-59.8,80.4c2.5,44.3,19.6,91.2,60.6,92.1
+				v0c0.1,0,0.2,0,0.3,0c0.1,0,0.2,0,0.3,0v0c41-0.9,58.1-47.8,60.6-92.1C784.2,92.6,766.7,57,721.8,57.4z"/>
+			<g>
+				
+					<ellipse transform="matrix(0.1335 -0.9911 0.9911 0.1335 521.7517 906.8383)" class="st2" cx="779.5" cy="155.1" rx="23.8" ry="8"/>
+				
+					<ellipse transform="matrix(0.9911 -0.1335 0.1335 0.9911 -14.7724 89.7493)" class="st2" cx="662" cy="155.1" rx="8" ry="23.8"/>
+			</g>
+			<rect x="685.7" y="197.7" class="st2" width="70.1" height="73.1"/>
+			<g>
+				<path class="st2" d="M733.6,303.8l-48.1-73.8v0c0,20.9-16.9,37.8-37.8,37.8h0L733.6,303.8z"/>
+				<path class="st2" d="M707.9,303.8l48.1-73.8v0c0,20.9,16.9,37.8,37.8,37.8l0,0L707.9,303.8z"/>
+			</g>
+		</g>
+		<g>
+			<rect x="631.1" y="267.5" class="st2" width="178.7" height="281.4"/>
+			<path class="st2" d="M603.7,305.9h233.4v86.2c0,35.4-28.7,64-64,64H667.8c-35.4,0-64-28.7-64-64V305.9z"/>
+			<path class="st2" d="M557.9,389.2H883v-59.3c0-34.5-28-62.4-62.4-62.4H620.3c-34.5,0-62.4,28-62.4,62.4V389.2z"/>
+			<path class="st2" d="M809.8,548.9h-89.4V745h127.1c0,0,0-24.5,0-74.5C847.5,622.5,809.8,548.9,809.8,548.9z"/>
+			<path class="st2" d="M631.1,548.9h89.4V745H593.4c0,0,0-24.5,0-74.5C593.4,622.5,631.1,548.9,631.1,548.9z"/>
+			<g>
+				<path class="st2" d="M805.8,996c0,19.3-77.1,0-77.1,0V745c0,0,118.8-29.7,118.8,0C847.5,851.8,805.8,966.9,805.8,996z"/>
+				<path class="st2" d="M784.6,1310.9h-41L728.7,996h76.9c0,0,6.4,92.3,6.4,123.2C812,1205.9,784.6,1310.9,784.6,1310.9z"/>
+				<path class="st2" d="M792.4,1405.8c-0.1,2.3-2.4,6-4.9,9.3c-3.8,5-9.7,7.8-15.9,7.8h-29.7c-7,0-12.4-6.1-11.4-13.1l13.1-99h41
+					C784.5,1310.9,793.5,1376.6,792.4,1405.8z"/>
+			</g>
+			<g>
+				<path class="st2" d="M635.1,996c0,19.3,77.1,0,77.1,0V745c0,0-118.8-29.7-118.8,0C593.4,851.8,635.1,966.9,635.1,996z"/>
+				<path class="st2" d="M656.3,1310.9h41L712.2,996h-76.9c0,0-6.4,92.3-6.4,123.2C628.9,1205.9,656.3,1310.9,656.3,1310.9z"/>
+				<path class="st2" d="M648.4,1405.8c0.1,2.3,2.4,6,4.9,9.3c3.8,5,9.7,7.8,15.9,7.8H699c7,0,12.4-6.1,11.4-13.1l-13.1-99h-41
+					C656.3,1310.9,647.4,1376.6,648.4,1405.8z"/>
+			</g>
+			<polygon class="st2" points="903.4,538.5 857.5,543.8 829.7,326.4 882.8,320.3 			"/>
+			<path class="st2" d="M918.2,723.1l-27,3.1l-33.7-182.5c0,0,42.4-39.8,43.8-27.7c2.5,21.5,8.9,43.4,12.1,73.1
+				C917,622.5,918.2,723.1,918.2,723.1z"/>
+			<path class="st2" d="M918.2,723.1v41.4c0,8.9-2.7,17.6-7.9,24.9l-32.9,46.8c-2.7,3.9-8,4.9-11.9,2.3l0,0c-3.7-2.4-5-7.1-3.1-11.1
+				l20.4-42.3l-2.8-15.3l-14.6,28.8c-0.7,1.3-2.2,2-3.7,1.6l0,0c-1.5-0.4-2.5-1.9-2.3-3.4l3.1-27.7c0.8-7.2,3.3-14.1,7.4-20.1
+				l21.2-22.9L918.2,723.1z"/>
+			<g>
+				<polygon class="st2" points="538,538.5 583.9,543.8 611.8,326.4 558.6,320.3 				"/>
+				<path class="st2" d="M523.2,723.1l27,3.1l33.7-182.5c0,0-42.4-39.8-43.8-27.7c-2.5,21.5-8.9,43.4-12.1,73.1
+					C524.4,622.5,523.2,723.1,523.2,723.1z"/>
+				<path class="st2" d="M523.2,723.1v41.4c0,8.9,2.7,17.6,7.9,24.9l32.9,46.8c2.7,3.9,8,4.9,11.9,2.3h0c3.7-2.4,5-7.1,3.1-11.1
+					l-20.4-42.3l2.8-15.3l14.6,28.8c0.7,1.3,2.2,2,3.7,1.6l0,0c1.5-0.4,2.5-1.9,2.3-3.4l-3.1-27.7c-0.8-7.2-3.3-14.1-7.4-20.1
+					l-21.2-22.9L523.2,723.1z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st3" d="M738.3,274.1L738.3,274.1c3.9-2.5,8.4-3.9,13.1-3.9h6.3c7.9,0.5,12.9,3.1,16,7.1
+				c21.4,27.7,48.6,65,55.8,114.3c1.7,11.9-15.2,35.7-19.8,39.1c-55.8,41.5-87.2-27.9-87.2-27.9l5-109.7
+				C727.7,285.4,731.8,278.4,738.3,274.1z"/>
+			<circle class="st3" cx="774.8" cy="396.9" r="54.6"/>
+		</g>
+		<g>
+			<path class="st3" d="M704,274.1L704,274.1c-3.9-2.5-8.4-3.9-13.1-3.9h-6.3c-7.9,0.5-12.9,3.1-16,7.1
+				c-21.4,27.7-48.6,65-55.8,114.3c-1.7,11.9,15.2,35.7,19.8,39.1c55.8,41.5,87.2-27.9,87.2-27.9l17.6-99l-22.5-10.6
+				C714.5,285.4,710.5,278.4,704,274.1z"/>
+			<circle class="st3" cx="667.4" cy="396.9" r="54.6"/>
+		</g>
+	</g>
+	<path class="st4" d="M720.7,716.5L720.7,716.5c-30.3,0-54.9-24.6-54.9-54.9v-61.7c0-30.3,24.6-54.9,54.9-54.9h0
+		c30.3,0,54.9,24.6,54.9,54.9v61.7C775.6,692,751,716.5,720.7,716.5z"/>
+	<g>
+		<g>
+			<g>
+				<circle class="st5" cx="688.4" cy="395.5" r="22.4"/>
+				<circle class="st5" cx="658.5" cy="406.3" r="24.4"/>
+				<circle class="st5" cx="697.2" cy="330.6" r="13.5"/>
+				<rect x="680.9" y="330.6" class="st5" width="29.9" height="61"/>
+				<path class="st5" d="M635,399.7c13.2-52.4,53.6-79.5,53.6-79.5l5.4,70.4C694.1,390.5,631.4,414.2,635,399.7z"/>
+			</g>
+			<g>
+				<circle class="st5" cx="753.9" cy="395.5" r="22.4"/>
+				<circle class="st5" cx="783.7" cy="406.3" r="24.4"/>
+				<circle class="st5" cx="745" cy="330.6" r="13.5"/>
+				
+					<rect x="731.5" y="330.6" transform="matrix(-1 4.449939e-11 -4.449939e-11 -1 1492.798 722.2909)" class="st5" width="29.9" height="61"/>
+				<path class="st5" d="M807.2,399.7c-13.2-52.4-53.6-79.5-53.6-79.5l-5.4,70.4C748.1,390.5,810.9,414.2,807.2,399.7z"/>
+			</g>
+		</g>
+		<rect x="713.7" y="269.8" class="st5" width="14.9" height="56.1"/>
+		<g>
+			
+				<rect x="731.3" y="314.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -25.6649 622.6356)" class="st5" width="14.9" height="56.1"/>
+			
+				<rect x="696" y="314.3" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 958.8783 1081.7765)" class="st5" width="14.9" height="56.1"/>
+		</g>
+	</g>
+	<g>
+		<path class="st6" d="M888.8,761.9c0,0,20.9-17.7,20.3-35.7c-1.6-43.9,1.6-76-1.6-100.3c-8-60.9-24.9-73-27.9-100.5
+			c-2.6-23.1,5-164.8-13-199.7c-19.1-36.9-65.2-41.5-97.4-33c-22.8,6-28.3,24.1-30.4,35.6c-1.6,8.8-1.8,16.5,2.7,35.8"/>
+		<path class="st6" d="M820,291.7c23.7,6.2,25.7,29.3,27.5,56.9s33.3,135.3,30.9,171.2c-2.4,35.9-1.1,91.7,6.5,115.8
+			c7.6,24.1,21.6,54.8,23.8,80.9"/>
+		<path class="st6" d="M553.7,761.9c0,0-20.9-17.7-20.3-35.7c1.6-43.9-1.6-76,1.6-100.3c8-60.9,24.9-73,27.9-100.5
+			c2.6-23.1-5-164.8,13-199.7c19.1-36.9,65.2-41.5,97.4-33c22.8,6,47.4,21.8,51.6,35.6c2.6,8.6,8.6,16.5,4.2,35.8"/>
+		<path class="st6" d="M622.5,291.7c-23.7,6.2-25.7,29.3-27.5,56.9s-33.3,135.3-30.9,171.2c2.4,35.9,1.1,91.7-6.5,115.8
+			c-7.6,24.1-21.6,54.8-23.8,80.9"/>
+		<path class="st6" d="M769.2,292.8c0,0-23.1-47.7-24.2-62.9c-1.1-15.2,13.1-41.3,23.2-68.4c5.7-15.3,5-30.2,3.3-40.3
+			c-1.3-7.6-6.4-14-13.5-16.9l-4.6-1.9"/>
+		<line class="st6" x1="745" y1="226.5" x2="750.8" y2="302.1"/>
+		<path class="st6" d="M671.9,291.9c0,0,23.1-46.8,24.2-62c1.1-15.2-13.1-41.3-23.2-68.4c-6.5-17.4-4.7-34.3-2.5-44.1
+			c1.2-5.4,4.3-10.1,8.7-13.3l4.8-3.5"/>
+		<line class="st6" x1="696.1" y1="226.5" x2="690.3" y2="298.7"/>
+		<path class="st6" d="M724.8,412.4c0,0-3.9,223.5,0.4,234.6c4.3,11.1,78.3,67.9,82.1,115c8.8,108-27.9,228.6-29.6,234.1
+			c-6.6,21.4,19,145.2,13.3,195.2s-26.4,117.2-29.7,141.5c-3.2,24.3-5.6,54.3-5.6,54.3"/>
+		<path class="st6" d="M753.9,677.6c13,13.8,18.6,46.7,16.4,84.3c-2.1,37.6,8.4,197.7,2.4,249.2c-6,51.5-18.1,154.4-14.2,193
+			c3.9,38.6,7.1,90.2,2.9,128.7"/>
+		<path class="st6" d="M723.7,643.6c-4.3,11.1-86.7,71.3-90.5,118.4c-8.8,108,27.9,228.6,29.6,234.1c6.6,21.4-19,145.2-13.3,195.2
+			s26.4,117.2,29.7,141.5c3.2,24.3,5.6,54.3,5.6,54.3"/>
+		<path class="st6" d="M687.1,679.7c-13,13.8-19,44.6-16.9,82.2c2.1,37.6-8.4,197.7-2.4,249.2c6,51.5,18.1,154.4,14.2,193
+			s-7.1,90.2-2.9,128.7"/>
+	</g>
+	<path class="st7" d="M726.2,341.1c0,0,4.3,6.4,3.8,7.8c-0.4,1.4-3.7,2.6-7.2,11c-2.3,5.8,0.9,11.3-0.6,12.4
+		c-1.6,1.1-5.7,7.9-6.9,10.2c-8.9,16.7,4,34.6,13.3,41.2c9.3,6.5,18.4,6.7,24.3,9.3c8.2,3.5,19,5.8,25.3-5.3c0,0,4.1-8.5-1-24.1
+		c-2.9-8.9-6.4-15.4-8.1-17.8c-5.5-7.7-11.2-11.2-13.8-12.6c-1.4-0.7-0.8-3.8,2-5c2.8-1.3,6-0.3,6-0.3l1-4c0,0-3.9-1.3-5.8-0.9
+		c-1.9,0.3,2.1-4.2,2.3-7.3c0,0-2.7-2.3-4.4-1.7c0,0-1,3.7-3.5,7.7c0,0,1-9.6-5.9-14.6c0,0,1.6-8.1,2.1-8.8c0,0-3.2-1.7-4.5-1.4
+		c0,0-1.9,8.1-2.2,8.3c-0.3,0.2-0.9,1.2-1.5,0.2c-0.6-1-0.8-9.6-0.8-9.6l-4.4,0.5c0,0,1.9,9.3,0.7,9.8c-0.4,0.2-0.8,0.8-1.6,0.1
+		c-2.1-1.8-4.3-6.9-4.3-7.3C730.4,338.4,726.2,341.1,726.2,341.1z"/>
+	<g>
+		<circle class="st7" cx="687.4" cy="99.9" r="13.6"/>
+		<circle class="st7" cx="707.7" cy="88.3" r="14.7"/>
+		<circle class="st7" cx="730.3" cy="86.9" r="16.3"/>
+		<circle class="st7" cx="681.2" cy="105.4" r="8.1"/>
+		<circle class="st7" cx="760.8" cy="105.4" r="8.1"/>
+		<circle class="st7" cx="749.7" cy="94" r="11"/>
+		<rect x="681.2" y="99.9" class="st7" width="79.6" height="13.6"/>
+		<rect x="706.7" y="90.9" class="st7" width="14.3" height="17.6"/>
+	</g>
+	<g>
+		<g>
+			<rect x="118.3" y="171.3" class="st8" width="380.7" height="354.3"/>
+			<text transform="matrix(1 0 0 1 118.2859 188.8058)"><tspan x="0" y="0" class="st1 st9 st10 st11">Demència</tspan><tspan x="0" y="36" class="st1 st9 st10 st11">Ictus</tspan><tspan x="0" y="72" class="st1 st9 st10 st11">Problemes de salut mental</tspan><tspan x="0" y="108" class="st1 st9 st10 st11">Malalties neurodegeneratives</tspan><tspan x="0" y="144" class="st1 st9 st10 st11">Malalties cerebrovasculars</tspan><tspan x="0" y="180" class="st1 st9 st10 st11">Deteriorament cognitiu</tspan></text>
+		</g>
+		<g>
+			<rect x="118.3" y="113.2" class="st8" width="283.7" height="58"/>
+			<text transform="matrix(1 0 0 1 118.2854 137.3209)" class="st1 st9 st12 st11">Cap</text>
+		</g>
+		<line class="st13" x1="730.7" y1="90.8" x2="118.3" y2="89.1"/>
+		<g>
+			<rect x="118.3" y="824.7" class="st8" width="538.6" height="474.6"/>
+			<text transform="matrix(1 0 0 1 118.2859 842.2587)"><tspan x="0" y="0" class="st1 st9 st10 st11">Obesitat</tspan><tspan x="0" y="36" class="st1 st9 st10 st11">Diabetis </tspan><tspan x="0" y="72" class="st1 st9 st10 st11">Síndrome metabòlica</tspan><tspan x="0" y="108" class="st1 st9 st10 st11">Càncer de còlon</tspan><tspan x="0" y="144" class="st1 st9 st10 st11">Augment de la mortalitat</tspan></text>
+		</g>
+		<g>
+			<rect x="118.3" y="766.6" class="st8" width="283.7" height="57.7"/>
+			<text transform="matrix(1 0 0 1 118.2854 790.7743)" class="st1 st9 st12 st11">General / Altres           </text>
+		</g>
+		<line class="st13" x1="614.5" y1="744.3" x2="118.3" y2="742.6"/>
+		<circle class="st7" cx="106.9" cy="871.6" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="944.1" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="907.9" r="5.5"/>
+		<g>
+			<circle class="st7" cx="106.9" cy="979" r="5.5"/>
+		</g>
+		<g>
+			<circle class="st7" cx="106.9" cy="834.3" r="5.5"/>
+		</g>
+		<circle class="st7" cx="106.9" cy="324.9" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="361.1" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="217.5" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="180.8" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="289.7" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="254.2" r="5.5"/>
+		<circle class="st7" cx="1334.5" cy="183.4" r="5.5"/>
+		<circle class="st7" cx="1334.5" cy="1163.1" r="5.5"/>
+		<circle class="st7" cx="106.9" cy="657.2" r="5.5"/>
+		<g>
+			<rect x="964.1" y="172.1" class="st8" width="357.8" height="214.7"/>
+			<text transform="matrix(1 0 0 1 1076.0701 189.6314)" class="st1 st9 st10 st11">Malalties respiratòries</text>
+		</g>
+		<g>
+			<rect x="936.7" y="114.1" class="st8" width="385.2" height="138.5"/>
+			<text transform="matrix(1 0 0 1 998.155 138.2581)" class="st1 st9 st12 st11">Aparell respiratori</text>
+		</g>
+		<polyline class="st13" points="1322,91.8 959.1,90.3 779.5,362.3 		"/>
+		<g>
+			<rect x="118.3" y="647.4" class="st8" width="357.8" height="48.9"/>
+			<text transform="matrix(1 0 0 1 118.2852 664.9111)" class="st1 st9 st10 st11">Càncer de pit </text>
+		</g>
+		<g>
+			<rect x="118.3" y="588" class="st8" width="385.2" height="138.5"/>
+			<text transform="matrix(1 0 0 1 118.2842 612.0829)" class="st1 st9 st12 st11">PIT</text>
+		</g>
+		<polyline class="st13" points="118.3,565.6 481.1,564.1 631.1,373.1 		"/>
+		<circle class="st7" cx="1334.5" cy="529.2" r="5.5"/>
+		<circle class="st7" cx="1334.2" cy="564.2" r="5.5"/>
+		<g>
+			<rect x="965" y="517.7" class="st8" width="357.8" height="151.9"/>
+			<text transform="matrix(1 0 0 1 1129.1021 535.2103)"><tspan x="0" y="0" class="st1 st9 st10 st11">Infart de miocardi</tspan><tspan x="-83.8" y="36" class="st1 st9 st10 st11">Malalties cardiovasculars</tspan></text>
+		</g>
+		<g>
+			<rect x="937.6" y="458.9" class="st8" width="385.2" height="66.7"/>
+			<text transform="matrix(1 0 0 1 1256.0405 483.0313)" class="st1 st9 st12 st11">Cor</text>
+		</g>
+		<polyline class="st13" points="1322.8,436.5 960.1,435.1 759.3,393.7 		"/>
+		<g>
+			<rect x="964.1" y="1151.8" class="st8" width="357.8" height="133.5"/>
+			<text transform="matrix(1 0 0 1 1191.8948 1169.328)" class="st1 st9 st10 st11">Hipertensió</text>
+		</g>
+		<g>
+			<rect x="936.7" y="1093.4" class="st8" width="385.2" height="59.8"/>
+			<text transform="matrix(1 0 0 1 1189.3645 1117.4879)" class="st1 st9 st12 st11">Artèries</text>
+		</g>
+		<line class="st13" x1="1322" y1="1069.6" x2="782.3" y2="1067.9"/>
+	</g>
+</g>
+</svg>

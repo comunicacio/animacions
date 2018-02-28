@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Descripció">
+	<meta name="keywords" content="Paraules clau">
+	<title>Solutions</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="soluciones.js"></script>
+	<link rel="stylesheet" href="animacions.css">
+</head>
+
+<body style="overflow: hidden">
+	<div id="solucions-activitat-fisica" class="graphic-container">
+			<style type="text/css">
+
+				body {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				.titol-principal {
+					font-family:'Platform'; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+					font-size: 250%;
+					line-height: 94%;
+				}
+				.titol {
+					font-family:'Platform'; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+					font-size: 170%;
+					line-height: 94%;
+				}
+				p {
+					margin: 0;
+					margin-bottom: 10px;
+				}
+				.toggle-cont {
+					position: relative;
+					border-top: 10px solid #000;
+					background: #3aa336;
+					margin-bottom: 20px;
+					color: #fff;
+					font-family:'georgia'; font-weight: 300;
+				}
+				.toggle-btn {
+					position: absolute;
+					width: 100px;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					background: #aecf98 url(images/ico-btn-toggle.svg) no-repeat center center;
+					background-size: 40% auto;
+					cursor: pointer;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				.active .toggle-btn {
+					background: #aecf98 url(images/ico-btn-toggle-active.svg) no-repeat center center;
+					background-size: 40% auto;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-btn,
+					.active .toggle-btn {
+						width: 40px;
+						background-size: 60% auto;
+					}					
+				}
+				.toggle-header {
+					position: relative;
+					width: 100%;
+					padding: 20px 30px;
+					padding-right: 100px;
+					box-sizing: border-box;
+					cursor: pointer;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 767px) {
+					.toggle-header {
+						padding-right: 70px;
+					}					
+				}
+				.toggle-header .titol {
+					margin: 0;
+					margin-bottom: 10px;
+				}
+				.toggle-header .pregunta {
+					margin: 0;
+					max-width: 400px;
+					font-size: 130%;
+				}
+				.toggle-body {
+					width: 100%;
+					padding: 0 30px;
+					padding-right: 140px;
+					overflow: hidden;
+					height: auto;
+					max-height: 0;
+					box-sizing: border-box;
+
+					transition: all .4s ease-in-out;
+					-moz-transition: all .4s ease-in-out;
+					-webkit-transition: all .4s ease-in-out;
+					-o-transition: all .4s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-body {
+						padding-right: 80px;
+					}					
+				}
+				.active .toggle-body {
+					max-height: 2000px;
+
+					transition: all .6s ease-in-out;
+					-moz-transition: all .6s ease-in-out;
+					-webkit-transition: all .6s ease-in-out;
+					-o-transition: all .6s ease-in-out;
+				}
+				.toggle-body-cont {
+					border-top: 2px solid #000;
+					padding: 20px 0;
+					width: calc(100% - 30px);
+					padding-right: 40px;
+				}
+				@media (max-width: 1023px) {
+					.toggle-body-cont {
+						width: 100%;
+						padding-right: 0;
+					}					
+				}
+				.toggle-img {
+					pointer-events: none;
+					position: absolute;
+					right: 200px;
+			    top: 50%;
+    			transform: translateY(-50%);
+			    width: 16%;
+			    opacity: 0;
+
+					transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+				}
+				@media (max-width: 1023px) {
+					.toggle-img {
+						right: 70px;
+					}					
+				}
+				@media (max-width: 767px) {
+					.toggle-img {
+			    	display: none;
+					}					
+				}
+				.active .toggle-img {
+			    opacity: 1;
+				}
+				.contaminacio .toggle-img {
+    			width: 22%;
+			  }
+				.soroll .toggle-img:lang(en) {
+    			width: 12%;
+			  }
+				.activitatfisica .toggle-img {
+    			width: 18%;
+			  }
+				.temperatura .toggle-img {
+    			width: 15%;
+			  }
+				.espaisnaturals .toggle-img {
+    			width: 17%;
+			  }
+				.toggle-body a {
+					color: #000;
+					text-decoration: underline;
+				}
+			</style>
+
+			<!-- ActivitatFisica -->
+			<div class="toggle-cont activitatfisica">
+				<div class="toggle-btn"></div>
+				<div class="toggle-header">
+					<h2 class="titol">Physical activity</h2>
+					<p class="pregunta">How can we increase physical activity levels in cities?</p>
+					<img class="toggle-img" src="images/ico-activitatfisica.svg">
+				</div>
+				<div class="toggle-body">
+					<div class="toggle-body-cont">
+						<p><strong>The design of our cities and urban transportation systems is a crucial factor in boosting physical activity in the population:</strong>
+							<ul>
+								<li><strong>Active transport</strong> —getting around on foot or by bicycle— on a daily basis is the most practical and sustainable way to increase physical activity.</li>
+								<li>A good <strong>public transport</strong> network makes it easier for people to walk more and reduces private vehicle use.</li>
+								<li><strong>Green spaces </strong> are an important factor and provide a safe environment for physical activity.</li>
+							</ul>
+						</p>
+						<p><strong>All these measures are included in this <a href="#">study</a> published in <em>The Lancet</em>, , which analysed physical activity in 14 cities.</strong></p>
+					</div>
+				</div>
+			</div>
+			<!-- ActivitatFisica -->
+		
+	</div>
+		<script>
+			// Get height of document
+			function getDocHeight(doc) {
+				doc = doc || document;
+				var body = doc.body, html = doc.documentElement;
+				var height = Math.max( body.scrollHeight, body.offsetHeight, 
+					html.clientHeight, html.scrollHeight, html.offsetHeight );
+				return height;
+			}
+
+			// send docHeight onload
+			function sendDocHeightMsg(e) {
+				var ht = getDocHeight();
+				var id = 'solucions-activitat-fisica'; //iframe id
+				parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+			}
+
+			// assign onload handler 
+			if ( window.addEventListener ) {
+				window.addEventListener('load', sendDocHeightMsg, false);
+			} else if ( window.attachEvent ) { // ie8
+				window.attachEvent('onload', sendDocHeightMsg);
+			}
+		</script>
+</body>
+</html>
