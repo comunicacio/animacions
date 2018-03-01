@@ -27,4 +27,8 @@ jQuery(document).ready(function() {
     jQuery('.content' + target).removeClass('active');
   });
 
+  jQuery(".toggle-header , .toggle-btn").click(function() {
+    jQuery(this).parent().toggleClass("active");
+  });
+
 });

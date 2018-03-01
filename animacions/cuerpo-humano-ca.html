@@ -15,6 +15,41 @@
       font-size: 16px;
       line-height: 24px;
     }
+
+    .screen-mobile {
+      display: block;
+      pointer-events: inherit;
+    }
+
+    .screen-desktop {
+      display: none;
+      pointer-events: none;
+    }
+
+    @media (min-width: 768px) {
+      .screen-mobile {
+        display: block;
+        pointer-events: inherit;
+      }
+
+      .screen-desktop {
+        display: none;
+        pointer-events: none;
+      }
+    }
+    @media (min-width: 1024px) {
+      .screen-mobile {
+        display: none;
+        pointer-events: none;
+      }
+
+      .screen-desktop {
+        display: block;
+        pointer-events: inherit;
+      }
+    }
+
+
     header {
       max-width: 1024px;
     }
@@ -63,22 +98,28 @@
       -webkit-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
     }
-    nav ul li .btn[data-target="#contaminacio"] {
+    nav ul li .btn[data-target="#contaminacio"],
+    .toggle-cont.contaminacio .toggle-header {
       background-color: #34b7eb;
     }
-    nav ul li .btn[data-target="#soroll"] {
+    nav ul li .btn[data-target="#soroll"],
+    .toggle-cont.soroll .toggle-header {
       background-color: #004f9f;
     }
-    nav ul li .btn[data-target="#temperatura"] {
+    nav ul li .btn[data-target="#temperatura"],
+    .toggle-cont.temperatura .toggle-header {
       background-color: #f29700;
     }
-    nav ul li .btn[data-target="#activitatfisica"] {
+    nav ul li .btn[data-target="#activitatfisica"],
+    .toggle-cont.activitatfisica .toggle-header {
       background-color: #bb94c2;
     }
-    nav ul li .btn[data-target="#espaisnaturals"] {
+    nav ul li .btn[data-target="#espaisnaturals"],
+    .toggle-cont.espaisnaturals .toggle-header {
       background-color: #3aa336;
     }
-    nav ul li .btn[data-target="#tots"] {
+    nav ul li .btn[data-target="#tots"],
+    .toggle-cont.tots .toggle-header {
       background-color: #231f20;
     }
     nav ul li .btn.active {
@@ -103,6 +144,78 @@
       width: 100%;
       height: auto;
     }
+
+    .toggle-cont {
+      position: relative;
+      background: #fafafa;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .toggle-btn {
+      position: absolute;
+      width: 100px;
+      top: 0;
+      right: 0;
+      height: 56px;
+      background: transparent url(images/ico-btn-toggle.svg) no-repeat center center;
+      background-size: 40% auto;
+      cursor: pointer;
+
+      transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+    }
+    .active .toggle-btn {
+      background: transparent url(images/ico-btn-toggle-active.svg) no-repeat center center;
+      background-size: 40% auto;
+
+      transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+    }
+    @media (max-width: 1023px) {
+      .toggle-btn,
+      .active .toggle-btn {
+        width: 40px;
+        background-size: 60% auto;
+      }  
+    }
+    
+    .toggle-header .titol {
+      font-family:'Platform'; font-weight: 300; letter-spacing: 1px;
+      margin: 0;
+      padding: 16px 10px;
+    }
+    .toggle-body {
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      height: auto;
+      max-height: 0;
+      box-sizing: border-box;
+
+      transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+    }
+    .active .toggle-body {
+      max-height: 2000px;
+
+      transition: all .6s ease-in-out;
+      -moz-transition: all .6s ease-in-out;
+      -webkit-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+    }
+    .toggle-body-cont {
+      width: 100%;
+    }
+    .toggle-img {
+      position: relative;
+      max-width: 360px;
+    }
   </style>
 </head>
 
@@ -115,18 +228,19 @@
 
   <div class="graphic-container">
 
-    <nav>
-      <ul>
-        <li><a class="btn" data-target="#contaminacio">Contaminació de l'aire</a></li>
-        <li><a class="btn" data-target="#soroll">Soroll</a></li>
-        <li><a class="btn" data-target="#temperatura">Calor</a></li>
-        <li><a class="btn" data-target="#activitatfisica">Falta d'activitat física</a></li>
-        <li><a class="btn" data-target="#espaisnaturals">Falta d'espais naturals</a></li>
-        <li><a class="btn" data-target="#tots">Tots</a></li>
-      </ul>
-    </nav>
-
     <div class="screen-desktop">
+
+      <nav>
+        <ul>
+          <li><a class="btn" data-target="#contaminacio">Contaminació de l'aire</a></li>
+          <li><a class="btn" data-target="#soroll">Soroll</a></li>
+          <li><a class="btn" data-target="#temperatura">Calor</a></li>
+          <li><a class="btn" data-target="#activitatfisica">Falta d'activitat física</a></li>
+          <li><a class="btn" data-target="#espaisnaturals">Falta d'espais naturals</a></li>
+          <li><a class="btn" data-target="#tots">Tots</a></li>
+        </ul>
+      </nav>
+
       <div id="inici" class="dibuix-cos active">
         <svg version="1.1" id="CosHuma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 1440 1451.3" style="enable-background:new 0 0 1440 1451.3;" xml:space="preserve">
@@ -140,7 +254,7 @@
             .st6{fill:#F0A0A0;}
             .st7{fill:#E55465;}
             .st8{fill:none;}
-            .st9{font-family:'Platform'; font-weight: 300; letter-spacing: 1px;}
+            .st9{font-family:'Platform'; font-weight: 300; letter-spacing: 1.5px;}
             .st10{font-size:33.0075px;}
             .st11{fill:none;stroke:#181716;stroke-width:1.5003;stroke-miterlimit:10;}
             .st12{font-size:24.0054px;}
@@ -445,7 +559,7 @@
             </g>
             <g>
               <rect x="119.6" y="766.3" class="st8" width="283.7" height="57.7"/>
-              <text transform="matrix(1 0 0 1 119.5591 790.3861)" class="st1 st9 st10">General / Altres           </text>
+              <text transform="matrix(1 0 0 1 119.5591 790.3861)" class="st1 st9 st10">GENERAL / ALTRES           </text>
             </g>
             <line class="st11" x1="615.7" y1="743.9" x2="119.6" y2="742.2"/>
             <g>
@@ -603,11 +717,11 @@
               <circle class="st16" cx="1333.7" cy="349.7" r="5.5"/>
               <g>
                 <rect x="963.4" y="170.4" class="st8" width="357.8" height="214.7"/>
-                <text transform="matrix(1 0 0 1 994.375 187.9527)"><tspan x="0" y="0" class="st1 st9 st12 st27">Malaltia Pulmonar Obstructiva </tspan><tspan x="152.4" y="26" class="st1 st9 st12 st27">Crònica (MPOC) </tspan><tspan x="267.9" y="62" class="st1 st9 st12 st27">Asma</tspan><tspan x="81" y="98" class="st1 st9 st12 st27">Malalties respiratòries  </tspan><tspan x="207.7" y="134" class="st1 st9 st12 st27">Pneumònia</tspan><tspan x="139.6" y="170" class="st1 st9 st12 st27">Càncer de pulmó</tspan></text>
+                <text textLength="1130" transform="matrix(1 0 0 1 994.375 187.9527)"><tspan x="0" y="0" class="st1 st9 st12 st27">Malaltia Pulmonar Obstructiva</tspan><tspan x="152.4" y="26" class="st1 st9 st12 st27">Crònica (MPOC)</tspan><tspan x="267.9" y="62" class="st1 st9 st12 st27">Asma</tspan><tspan x="81" y="98" class="st1 st9 st12 st27">Malalties respiratòries</tspan><tspan x="207.7" y="134" class="st1 st9 st12 st27">Pneumònia</tspan><tspan x="139.6" y="170" class="st1 st9 st12 st27">Càncer de pulmó</tspan></text>
               </g>
               <g>
                 <rect x="936" y="112.5" class="st8" width="385.2" height="138.5"/>
-                <text transform="matrix(1 0 0 1 997.4287 136.5792)" class="st1 st9 st10 st27">Aparell respiratori</text>
+                <text textLength="300" transform="matrix(1 0 0 1 1026.4287 136.5792)" class="st1 st9 st10 st27">APARELL RESPIRATORI</text>
               </g>
               <polyline class="st11" points="1321.2,90.1 958.4,88.6 778.7,360.6       "/>
             </g>
@@ -621,7 +735,7 @@
               c-2.1-1.8-4.3-6.9-4.3-7.3C731.3,337.7,727.1,340.5,727.1,340.5z"/>
             <g>
               <rect x="938.5" y="458.3" class="st8" width="385.2" height="321.3"/>
-              <text transform="matrix(1 0 0 1 1256.895 482.3836)" class="st1 st9 st10">Cor</text>
+              <text transform="matrix(1 0 0 1 1256.895 482.3836)" class="st1 st9 st10">COR</text>
             </g>
             <polyline class="st11" points="1323.7,435.9 960.9,434.5 760.1,393.1   "/>
             <g>
@@ -635,10 +749,10 @@
               <circle class="st16" cx="1335.1" cy="635.4" r="5.5"/>
               <g>
                 <rect x="895" y="517" class="st8" width="428.7" height="151.9"/>
-                <text transform="matrix(1 0 0 1 1129.9585 534.5638)" class="st1 st9 st12">Infart de miocardi</text>
-                <text transform="matrix(1 0 0 1 1238.4585 570.5638)" class="st1 st9 st12">Arrítmia</text>
-                <text transform="matrix(1 0 0 1 959.8585 606.5638)" class="st1 st9 st12">Insuficiència congestiva cardíaca</text>
-                <text transform="matrix(1 0 0 1 1046.1584 642.5638)" class="st1 st9 st12">Malalties cardiovasculars</text>
+                <text textLength="180" transform="matrix(1 0 0 1 1129.9585 534.5638)" class="st1 st9 st12">Infart de miocardi</text>
+                <text textLength="72" transform="matrix(1 0 0 1 1238.4585 570.5638)" class="st1 st9 st12">Arrítmia</text>
+                <text textLength="352" transform="matrix(1 0 0 1 959.8585 606.5638)" class="st1 st9 st12">Insuficiència congestiva cardíaca</text>
+                <text textLength="264" transform="matrix(1 0 0 1 1046.1584 642.5638)" class="st1 st9 st12">Malalties cardiovasculars</text>
               </g>
             </g>
           </g>
@@ -651,20 +765,20 @@
               <path class="st5" d="M663.9,995.2"/>
               <path class="st5" d="M724.9,642.7c-2.4,6.2-29.5,28-53.4,54.2"/>
             </g>
-            <g class="st18">
+            <g>
               <rect x="956.4" y="744.8" class="st19" width="366.7" height="123.5"/>
-              <text transform="matrix(1 0 0 1 971.0815 768.9515)" class="st20 st9 st10">Aparell reproductor i </text>
-              <text transform="matrix(1 0 0 1 1242.7815 806.4515)" class="st20 st9 st10">fetus</text>
+              <text transform="matrix(1 0 0 1 991.0815 768.9515)" class="st20 st9 st10">APARELL REPRODUCTOR</text>
+              <text transform="matrix(1 0 0 1 1222.7815 806.4515)" class="st20 st9 st10">I FETUS</text>
             </g>
             <polyline class="st11" points="755,601.9 937.4,721.9 1323.1,720.7   "/>
             <g>
               <g>
                 <rect x="962.2" y="840.5" class="st8" width="360.9" height="195.4"/>
-                <text transform="matrix(1 0 0 1 1098.3162 858.0012)" class="st1 st9 st12">Naixement prematur </text>
-                <text transform="matrix(1 0 0 1 1114.5161 894.0012)" class="st1 st9 st12">Pes reduït al néixer  </text>
-                <text transform="matrix(1 0 0 1 1176.4161 930.0012)" class="st1 st9 st12">Preeclàmpsia</text>
-                <text transform="matrix(1 0 0 1 1036.0161 966.0012)" class="st1 st9 st12">Reducció de la qualitat de </text>
-                <text transform="matrix(1 0 0 1 1215.3162 992.0012)" class="st1 st9 st12">l&apos;esperma</text>
+                <text textLength="220" transform="matrix(1 0 0 1 1098.3162 858.0012)" class="st1 st9 st12">Naixement prematur</text>
+                <text textLength="205" transform="matrix(1 0 0 1 1114.5161 894.0012)" class="st1 st9 st12">Pes reduït al néixer</text>
+                <text textLength="140" transform="matrix(1 0 0 1 1176.4161 930.0012)" class="st1 st9 st12">Preeclàmpsia</text>
+                <text textLength="284" transform="matrix(1 0 0 1 1036.0161 966.0012)" class="st1 st9 st12">Reducció de la qualitat de</text>
+                <text textLength="104" transform="matrix(1 0 0 1 1215.3162 992.0012)" class="st1 st9 st12">l&apos;esperma</text>
               </g>
               <circle class="st16" cx="1335.6" cy="850.4" r="5.5"/>
               <circle class="st16" cx="1335.6" cy="887.9" r="5.5"/>
@@ -757,12 +871,12 @@
               <circle class="st16" cx="1335.4" cy="1200" r="5.5"/>
               <g>
                 <rect x="965" y="1152.2" class="st8" width="357.8" height="133.5"/>
-                <text transform="matrix(1 0 0 1 1192.7822 1169.7064)" class="st1 st9 st12">Hipertensió</text>
-                <text transform="matrix(1 0 0 1 1026.9822 1205.7064)" class="st1 st9 st12">Trombosi venosa profunda</text>
+                <text textLength="112" transform="matrix(1 0 0 1 1192.7822 1169.7064)" class="st1 st9 st12">Hipertensió</text>
+                <text textLength="276" transform="matrix(1 0 0 1 1026.9822 1205.7064)" class="st1 st9 st12">Trombosi venosa profunda</text>
               </g>
               <g>
                 <rect x="937.6" y="1093.7" class="st8" width="385.2" height="59.8"/>
-                <text transform="matrix(1 0 0 1 1190.252 1117.8661)" class="st1 st9 st10">Artèries</text>
+                <text transform="matrix(1 0 0 1 1190.252 1117.8661)" class="st1 st9 st10">ARTÈRIES</text>
               </g>
               <line class="st11" x1="1322.8" y1="1070" x2="783.1" y2="1068.3"/>
             </g>
@@ -863,6 +977,92 @@
       <div id="tots" class="dibuix-cos">
         <img src="images/img-cos-tots-ca.svg">
       </div>
+    </div>
+
+    <div class="screen-mobile">
+      <!-- Contaminacio -->
+      <div class="toggle-cont contaminacio">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Contaminació de l'aire</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-contaminacio-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Contaminacio -->
+
+      <!-- Soroll -->
+      <div class="toggle-cont soroll">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Soroll</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-soroll-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Soroll -->
+
+      <!-- Temperatura -->
+      <div class="toggle-cont temperatura">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Calor</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-temperatura-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Temperatura -->
+
+      <!-- ActivitatFisica -->
+      <div class="toggle-cont activitatfisica">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Falta d'activitat física</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-activitatfisica-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- ActivitatFisica -->
+
+      <!-- EspaisNaturals -->
+      <div class="toggle-cont espaisnaturals">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Falta d'espais naturals</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-espaisnaturals-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- EspaisNaturals -->
+
+      <!-- Tots -->
+      <div class="toggle-cont tots">
+        <div class="toggle-btn"></div>
+        <div class="toggle-header">
+          <h2 class="titol">Tots</h2>
+        </div>
+        <div class="toggle-body">
+          <div class="toggle-body-cont">
+            <img class="toggle-img" src="images/img-cos-ca-xs.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Tots -->
     </div>
   </div>
 		<script>
