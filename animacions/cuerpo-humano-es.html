@@ -1097,18 +1097,20 @@
 
 			// send docHeight onload
 			function sendDocHeightMsg(e) {
-				var ht = getDocHeight();
-				var id = 'CosHuma'; //iframe id
-				parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				setTimeout(function(){
+					var ht = getDocHeight();
+					var id = 'CosHuma'; //iframe id
+					parent.postMessage( JSON.stringify( {'docHeight': ht, 'id':id} ), '*' );
+				}, 400);
 			}
 
 			// assign onload handler 
 			if ( window.addEventListener ) {
 				window.addEventListener('load', sendDocHeightMsg, false);
-				//window.addEventListener('click', sendDocHeightMsg, false);
+				window.addEventListener('click', sendDocHeightMsg, false);
 			} else if ( window.attachEvent ) { // ie8
 				window.attachEvent('onload', sendDocHeightMsg);
-				//window.attachEvent('onclick', sendDocHeightMsg);
+				window.attachEvent('onclick', sendDocHeightMsg);
 			}
 		</script>
 </body>
