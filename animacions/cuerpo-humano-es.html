@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="animacions.css">
 
   <style type="text/css">
+  body {
+    margin:0;
+  }
+  .titol-principal {
+    margin-top:0;
+  }
+  </style>
+  
+  <style type="text/css">
     body {
       font-size: 16px;
       line-height: 24px;
@@ -1090,9 +1099,8 @@
 			// Get height of document
 			function getDocHeight(doc) {
 				doc = doc || document;
-				var body = doc.body, html = doc.documentElement;
-				var height = Math.max( body.scrollHeight, body.offsetHeight, 
-					html.clientHeight, html.scrollHeight, html.offsetHeight );
+				var body = doc.body;
+				var height = Math.max( body.scrollHeight, body.offsetHeight);
 				return height;
 			}
 
