@@ -1,0 +1,126 @@
+<!-- Index -->
+<!-- ca -->
+<iframe id="menu" src="https://comunicacio.github.io/animacions/animacions/menu-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="menu" src="https://comunicacio.github.io/animacions/animacions/menu-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="menu" src="https://comunicacio.github.io/animacions/animacions/menu-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Index -->
+
+<hr>
+
+<!-- Contaminación aire -->
+<!-- ca -->
+<iframe id="ContaminacionAire" src="https://comunicacio.github.io/animacions/animacions/contaminacion-aire-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="ContaminacionAire" src="https://comunicacio.github.io/animacions/animacions/contaminacion-aire-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="ContaminacionAire" src="https://comunicacio.github.io/animacions/animacions/contaminacion-aire-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Contaminación aire -->
+
+<hr>
+
+<!-- Soluciones -->
+<!-- ca -->
+<iframe id="solucions" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- ca actividad física -->
+<iframe id="solucions-activitat-fisica" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca-actividad-fisica.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- ca contaminación -->
+<iframe id="solucions-contaminacio" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca-contaminacion.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- ca espacios naturales -->
+<iframe id="solucions-espais-naturals" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca-espacios-naturales.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- ca ruido -->
+<iframe id="solucions-soroll" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca-ruido.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- ca temperatura -->
+<iframe id="solucions-temperatura" src="https://comunicacio.github.io/animacions/animacions/soluciones-ca-temperatura.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="solucions" src="https://comunicacio.github.io/animacions/animacions/soluciones-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es actividad física -->
+<iframe id="solucions-activitat-fisica" src="https://comunicacio.github.io/animacions/animacions/soluciones-es-actividad-fisica.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es contaminación -->
+<iframe id="solucions-contaminacio" src="https://comunicacio.github.io/animacions/animacions/soluciones-es-contaminacion.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es espacios naturales -->
+<iframe id="solucions-espais-naturals" src="https://comunicacio.github.io/animacions/animacions/soluciones-es-espacios-naturales.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es ruido -->
+<iframe id="solucions-soroll" src="https://comunicacio.github.io/animacions/animacions/soluciones-es-ruido.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es temperatura -->
+<iframe id="solucions-temperatura" src="https://comunicacio.github.io/animacions/animacions/soluciones-es-temperatura.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="solucions" src="https://comunicacio.github.io/animacions/animacions/soluciones-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en actividad física -->
+<iframe id="solucions-activitat-fisica" src="https://comunicacio.github.io/animacions/animacions/soluciones-en-actividad-fisica.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en contaminación -->
+<iframe id="solucions-contaminacio" src="https://comunicacio.github.io/animacions/animacions/soluciones-en-contaminacion.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en espacios naturales -->
+<iframe id="solucions-espais-naturals" src="https://comunicacio.github.io/animacions/animacions/soluciones-en-espacios-naturales.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en ruido -->
+<iframe id="solucions-soroll" src="https://comunicacio.github.io/animacions/animacions/soluciones-en-ruido.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en temperatura -->
+<iframe id="solucions-temperatura" src="https://comunicacio.github.io/animacions/animacions/soluciones-en-temperatura.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Soluciones -->
+
+<hr>
+
+<!-- Aire ciudades -->
+<!-- ca -->
+<iframe id="aire-ciutats" src="https://comunicacio.github.io/animacions/animacions/aire-ciudades-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="aire-ciutats" src="https://comunicacio.github.io/animacions/animacions/aire-ciudades-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="aire-ciutats" src="https://comunicacio.github.io/animacions/animacions/aire-ciudades-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Aire ciudades -->
+
+<hr>
+
+<!-- Cuerpo humano -->
+<!-- ca -->
+<iframe id="CosHuma" src="https://comunicacio.github.io/animacions/animacions/cuerpo-humano-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="CosHuma" src="https://comunicacio.github.io/animacions/animacions/cuerpo-humano-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="CosHuma" src="https://comunicacio.github.io/animacions/animacions/cuerpo-humano-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Cuerpo humano -->
+
+<hr>
+
+<!-- Actividad física -->
+<!-- ca -->
+<iframe id="actividad-fisica" src="https://comunicacio.github.io/animacions/animacions/actividad-fisica-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="actividad-fisica" src="https://comunicacio.github.io/animacions/animacions/actividad-fisica-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="actividad-fisica" src="https://comunicacio.github.io/animacions/animacions/actividad-fisica-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Actividad física -->
+
+<hr>
+
+<!-- Ciudades ruidosas -->
+<!-- ca -->
+<iframe id="ciutats-sorolloses" src="https://comunicacio.github.io/animacions/animacions/ciudades-ruidosas-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="ciutats-sorolloses" src="https://comunicacio.github.io/animacions/animacions/ciudades-ruidosas-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="ciutats-sorolloses" src="https://comunicacio.github.io/animacions/animacions/ciudades-ruidosas-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Ciudades ruidosas -->
+
+<hr>
+
+<!-- Espaciosnaturales -->
+<!-- ca -->
+<iframe id="espacios-naturales" src="https://comunicacio.github.io/animacions/animacions/espacios-naturales-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="espacios-naturales" src="https://comunicacio.github.io/animacions/animacions/espacios-naturales-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="espacios-naturales" src="https://comunicacio.github.io/animacions/animacions/espacios-naturales-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Espaciosnaturales -->
+
+<hr>
+
+<!-- Islas de calor -->
+<!-- ca -->
+<iframe id="islas-de-calor" src="https://comunicacio.github.io/animacions/animacions/islas-calor-ca.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- es -->
+<iframe id="islas-de-calor" src="https://comunicacio.github.io/animacions/animacions/islas-calor-es.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- en -->
+<iframe id="islas-de-calor" src="https://comunicacio.github.io/animacions/animacions/islas-calor-en.html" frameborder="0" style="width: 100%; height: -webkit-fill-available; height: -moz-available; -moz-fit-content; overflow: hidden!important;"></iframe>
+<!-- Islas de calor -->
