@@ -1,0 +1,462 @@
+{
+  "countries" : {
+    "ESP" : {
+      "ca" : "Espanya",
+      "es" : "España",
+      "en" : "Spain"
+    },
+    "ITA" : {
+      "ca" : "Itàlia",
+      "es" : "Italia",
+      "en" : "Italy"
+    },
+    "MOZ" : {
+      "ca" : "Moçambic",
+      "es" : "Mozambique",
+      "en" : "Mozambique"
+    },
+    "DEU" : {
+      "ca" : "Alemanya",
+      "es" : "Alemania",
+      "en" : "Germany"
+    },
+    "GAB" : {
+      "ca" : "Gabon",
+      "es" : "Gabon",
+      "en" : "Gabon"
+    },
+    "CHE" : {
+      "ca" : "Suïssa",
+      "es" : "Suiza",
+      "en" : "Switzerland"
+    },
+    "TZA" : {
+      "ca" : "Tanzània",
+      "es" : "Tanzania",
+      "en" : "Tanzania"
+    },
+    "GHA" : {
+      "ca" : "Ghana",
+      "es" : "Ghana",
+      "en" : "Ghana"
+    },
+    "KEN" : {
+      "ca" : "Kenya",
+      "es" : "Kenia",
+      "en" : "Kenya"
+    },
+    "BFA" : {
+      "ca" : "Burkina Faso",
+      "es" : "Burkina Faso",
+      "en" : "Burkina Faso"
+    },
+    "USA" : {
+      "ca" : "Estats Units",
+      "es" : "Estados Unidos",
+      "en" : "United States"
+    },
+    "GRC" : {
+      "ca" : "Grècia",
+      "es" : "Grecia",
+      "en" : "Greece"
+    },
+    "PRT" : {
+      "ca" : "Portugal",
+      "es" : "Portugal",
+      "en" : "Portugal"
+    },
+    "FRA" : {
+      "ca" : "França",
+      "es" : "Francia",
+      "en" : "France"
+    },
+    "IRL" : {
+      "ca" : "Irlanda",
+      "es" : "Irlanda",
+      "en" : "Ireland"
+    },
+    "GBR" : {
+      "ca" : "Regne Unit",
+      "es" : "Reino Unido",
+      "en" : "United Kingdom"
+    },
+    "BEL" : {
+      "ca" : "Bèlgica",
+      "es" : "Bélgica",
+      "en" : "Belgium"
+    },
+    "DNK" : {
+      "ca" : "Dinamarca",
+      "es" : "Dinamarca",
+      "en" : "Denmark"
+    },
+    "SWE" : {
+      "ca" : "Suècia",
+      "es" : "Suecia",
+      "en" : "Sweden"
+    },
+    "COG" : {
+      "ca" : "RD Congo",
+      "es" : "RD Congo",
+      "en" : "RD Congo"
+    },
+    "NGA" : {
+      "ca" : "Nigèria",
+      "es" : "Nigeria",
+      "en" : "Nigeria"
+    },
+    "MDG" : {
+      "ca" : "Madagascar",
+      "es" : "Madagascar",
+      "en" : "Madagascar"
+    },
+    "AUT" : {
+      "ca" : "Àustria",
+      "es" : "Austria",
+      "en" : "Austria"
+    },
+    "LBR" : {
+      "ca" : "Libèria",
+      "es" : "Liberia",
+      "en" : "Liberia"
+    },
+    "NLD" : {
+      "ca" : "Holanda",
+      "es" : "Holanda",
+      "en" : "Holland"
+    },
+    "HUN" : {
+      "ca" : "Hungria",
+      "es" : "Hungria",
+      "en" : "Hungary"
+    },
+    "TUN" : {
+      "ca" : "Tunísia",
+      "es" : "Túnez",
+      "en" : "Tunisia"
+    },
+    "BOL" : {
+      "ca" : "Bolívia",
+      "es" : "Bolivia",
+      "en" : "Bolivia"
+    },
+    "NZL" : {
+      "ca" : "Nova Zelanda",
+      "es" : "Nueva Zelanda",
+      "en" : "New Zealand"
+    },
+    "POL" : {
+      "ca" : "Polònia",
+      "es" : "Polonia",
+      "en" : "Poland"
+    },
+    "JPN" : {
+      "ca" : "Japó",
+      "es" : "Japón",
+      "en" : "Japan"
+    },
+    "NOR" : {
+      "ca" : "Noruega",
+      "es" : "Noruega",
+      "en" : "Norway"
+    },
+    "MAR" : {
+      "ca" : "Marroc",
+      "es" : "Marruecos",
+      "en" : "Morocco"
+    }
+  },
+  "platforms" : [
+    {
+      "country" : "BOL",
+      "url" : "https://www.isglobal.org/es/bolivia",
+      "address" : "Av. Aniceto Arce casi Av. Oquendo (antiguo Hospital Viedma), Cercado- Cochabamba",
+      "latlng" : [-17.385291, -66.148681],
+      "image" : "assets/img/platforms/Plataforma-Chagas.jpg"
+    },
+    {
+      "country" : "MAR",
+      "url" : "https://www.isglobal.org/es/morocco",
+      "address" : "335, Avenue Mohammed V Rabat.",
+      "latlng" : [34.011245, -6.828392],
+      "image" : "assets/img/platforms/Marroc.jpg"
+    },
+    {
+      "country" : "MOZ",
+      "url" : "https://www.isglobal.org/es/mozambique",
+      "address" : "Bairro Cambeve, Rua 12, Distrito da Manhiça, CP 1929, Maputo-Moçambique",
+      "latlng" : [-25.387464, 32.798052],
+      "image" : "assets/img/platforms/mozambique.jpg"
+    }
+  ],
+  "projects" : [
+    {
+      "title" : "RTSS",
+      "date" : "31/07/2019",
+      "countries" : [
+        "ESP","MOZ","DEU","GAB","CHE","TZA","GHA","KEN","BFA","USA"
+      ],
+      "url" : "https://www.isglobal.org/-/rts-s-vaccine-immunology-study",
+      "image" : "https://www.isglobal.org/documents/10179/15976/IMG_3821.png"
+    },
+    {
+      "title" : "MALTEM",
+      "date" : "30/09/2019",
+      "countries" : [
+        "ESP","MOZ"
+      ],
+      "url" : "https://www.isglobal.org/-/mozambican-alliance-towards-elimination-of-malaria-maltem-",
+      "image" : "https://www.isglobal.org/documents/10179/15976/maltem.jpg"
+    },
+    {
+      "title" : "Nomorfilm",
+      "date" : "30/03/2019",
+      "countries" : [
+        "ESP","ITA","GRC","PRT","FRA","IRL","GBR","BEL","DNK","SWE"
+      ],
+      "url" : "https://www.isglobal.org/-/nomorfilm",
+      "image" : "https://www.isglobal.org/documents/10179/5256602/NoMorFilm/a3410b7e-7cdf-4dd1-b5dc-c7d10dfb0c12?t=1469551036000"
+    },
+    {
+      "title" : "TIPTOP",
+      "date" : "30/04/2022",
+      "countries" : [
+        "ESP","MOZ","COG","NGA","MDG"
+      ],
+      "url" : "https://www.isglobal.org/-/tiptop",
+      "image" : "https://www.isglobal.org/documents/10179/5872775/Women+and+children+TIPTOP+Project/bc652a6b-14e4-4fb1-86b9-a9b8785e39de?t=1493997458000"
+    },
+    {
+      "title" : "MAMAH",
+      "date" : "28/02/2023",
+      "countries" : [
+        "ESP","GAB","MOZ","AUT","DEU"
+      ],
+      "url" : "https://www.isglobal.org/-/mamah",
+      "image" : "https://www.isglobal.org/documents/10179/5803659/pregnant+woman_web.jpg/f403dd79-bf73-454a-a1d0-b7b8e98603e4?t=1510821523000"
+    },
+    {
+      "title" : "IGORCARDIA",
+      "date" : "1/12/2019",
+      "countries" : [
+        "ESP","LBR"
+      ],
+      "url" : "https://www.isglobal.org/-/strengthening-laboratory-capacities-in-the-st-joseph-s-catholic-hospital-monrovia-for-clinical-trials-on-infectious-diseases-selec-1",
+      "image" : "https://www.isglobal.org/documents/10179/15976/select+photo+3.jpg/5d045d60-53a8-427a-9ab0-63354d2af5b4?t=1460642229000"
+    },
+    {
+      "title" : "STOP",
+      "date" : "30/09/2022",
+      "countries" : [
+        "ESP","MOZ"
+      ],
+      "url" : "https://www.isglobal.org/-/stop",
+      "image" : "https://www.isglobal.org/documents/10179/15976/STOP+logo/277f1423-7866-4064-bf8d-e3cdbc84986a?t=1549630823546"
+    },
+    {
+      "title" : "INSPIRES",
+      "date" : "31/03/2021",
+      "countries" : [
+        "ESP","FRA","NLD","ITA","HUN","TUN","BOL"
+      ],
+      "url" : "https://www.isglobal.org/-/inspires",
+      "image" : "https://www.isglobal.org/documents/10179/5872775/inspires+logo/2f95e2b9-87a5-4b9d-a1fd-3ffacbd71f6c?t=1533558353000"
+    },
+    {
+      "title" : "ELFES",
+      "date" : "8/03/2020",
+      "countries" : [
+        "ESP","FRA","NLD"
+      ],
+      "url" : "https://www.isglobal.org/-/elfes",
+      "image" : "https://www.isglobal.org/documents/10179/5872775/elfes+logo/2af74c94-1fff-4456-a852-d479ea612578?t=1498578125977"
+    },
+    {
+      "title" : "BISC (Frontier + Air&B)",
+      "date" : "31/05/2023",
+      "countries" : [
+        "ESP"
+      ],
+      "url" : "https://www.isglobal.org/-/bisc-barcelona-life-study-cohort-",
+      "image" : "https://www.isglobal.org/documents/10179/6210049/treball+de+camp+bisc.jpg/631db8f1-3ac2-4790-ac3b-c6e9c238375f?t=1543916471000"
+    },
+    {
+      "title" : "PIAN",
+      "date" : "",
+      "countries" : [
+        "ESP","NZL"
+      ],
+      "url" : "https://www.isglobal.org/-/evaluacion-de-estrategias-para-la-erradicacion-de-la-enfermedad-de-pian",
+      "image" : "https://www.isglobal.org/documents/10179/15976/Pian/68580a4f-a088-4fca-a1e0-6d9e39d619b6?t=1418388493000"
+    },
+    {
+      "title" : "MEDIRAD",
+      "date" : "31/05/2021",
+      "countries" : [
+        "ESP","FRA","AUT","POL","DEU","CHE","BEL","PRT","ITA","GBR","NLD","IRL"
+      ],
+      "url" : "https://www.isglobal.org/-/medirad",
+      "image" : "https://www.isglobal.org/documents/10179/15976/medirad+logo.png/3382f694-48cd-4bdc-8f3f-0fc9aaac0463?t=1508835867000"
+    },
+    {
+      "title" : "SHAMISEN SINGS",
+      "date" : "1/02/2020",
+      "countries" : [
+        "ESP","ITA","FRA","JPN","BEL","NOR"
+      ],
+      "url" : "https://www.isglobal.org/-/shamisen-sings",
+      "image" : "https://www.isglobal.org/documents/10179/15976/shamisen+sings.jpg/61008e0e-d611-4db1-aba0-62abfd70c6b9?t=1512646911000"
+    },
+    {
+      "title" : "VINCI",
+      "date" : "30/09/2022",
+      "countries" : [
+        "ESP","MOZ"
+      ],
+      "url" : "https://www.isglobal.org/-/vinci",
+      "image" : "https://www.isglobal.org/documents/10179/5872775/MDA+en+Mozambique+2017/a0b58d06-1eec-4162-9ef4-389932d22a9a?t=1538745620874"
+    },
+    {
+      "title" : "CARE",
+      "date" : "2015-2019",
+      "countries" : [
+        "ESP","MOZ"
+      ],
+      "url" : "https://www.isglobal.org/-/care",
+      "image" : "https://www.isglobal.org/documents/10179/5598739/01hiv+aids+tuberculosis.png/e23600d4-06b1-4c98-9278-28401fc50445?t=1526982417000"
+    },
+    {
+      "title" : "BOHEMIA",
+      "date" : "2019-2022",
+      "countries" : [
+        "ESP","TZA","MOZ","GBR","USA","CHE"
+      ],
+      "url" : "https://www.isglobal.org/-/bohemia",
+      "image" : "https://www.isglobal.org/documents/10179/15976/BOHEMIA/f3e27ddc-22fc-4da9-8bf4-fc3d3eef5bbc?t=1550826222000"
+    },
+    {
+      "title" : "CRISH 3",
+      "date" : "2019-2020",
+      "countries" : [
+        "ESP","GBR","FRA"
+      ],
+      "url" : "https://www.isglobal.org/-/crish",
+      "image" : "https://www.isglobal.org/documents/10179/5872775/crish+logo/59c2ed37-7658-4195-98db-66f7f794395e?t=1533558130000"
+    }
+  ],
+  "articles" : [
+    {
+      "title" : "Imperial College London",
+      "address" : "Kensington, Londres SW7 2AZ, Reino Unido",
+      "latlng" : [51.498522, -0.178536],
+      "image" : "assets/img/articles/imperial-college-london.png"
+    },
+    {
+      "title" : "MRC",
+      "address" : "One Kemble Street, London, WC2B 4AN",
+      "latlng" : [51.514964, -0.119430],
+      "image" : "assets/img/articles/mrc.jpeg"
+    },
+    {
+      "title" : "University of Oxford",
+      "address" : "Oxford OX1 2JD, Reino Unido",
+      "latlng" : [51.758147, -1.262203],
+      "image" : "assets/img/articles/oxford.jpeg"
+    },
+    {
+      "title" : "Inserm",
+      "address" : "56 Rue Leblanc, 75015 Paris, Francia",
+      "latlng" : [48.838221, 2.275333],
+      "image" : "assets/img/articles/inserm.jpeg"
+    },
+    {
+      "title" : "Karolinska Institute",
+      "address" : "Karolinska Institutet, SE-171 77 Stockholm",
+      "latlng" : [59.349238, 18.032246],
+      "image" : "assets/img/articles/karolinska.png"
+    },
+    {
+      "title" : "University of Basel",
+      "address" : "Klingelbergstrasse 61, 4056 Basel, Suiza",
+      "latlng" : [47.563273, 7.579774],
+      "image" : "assets/img/articles/basel.png"
+    },
+    {
+      "title" : "Swiss TPH",
+      "address" : "Socinstrasse 57, 4051 Basel, Suiza",
+      "latlng" : [47.556152, 7.577464],
+      "image" : "assets/img/articles/swiss.jpeg"
+    },
+    {
+      "title" : "Utrecht University",
+      "address" : "Domplein 29, 3512 JE Utrecht, Países Bajos",
+      "latlng" : [52.090427, 5.122341],
+      "image" : "assets/img/articles/utrecht.png"
+    },
+    {
+      "title" : "Erasmus University Medical Center",
+      "address" : "Doctor Molewaterplein 40, 3015 GD Rotterdam, Países Bajos",
+      "latlng" : [51.911083, 4.467822],
+      "image" : "assets/img/articles/erasmus.png"
+    },
+    {
+      "title" : "Crete University",
+      "address" : "Voutes University Campus, HERAKLION, Crete, GR-70013, Greece",
+      "latlng" : [35.307551, 25.082975],
+      "image" : "assets/img/articles/crete.jpeg"
+    },
+    {
+      "title" : "Munich University",
+      "address" : "Geschwister-Scholl-Platz 1, 80539 München, Alemania",
+      "latlng" : [48.150833, 11.580278],
+      "image" : "assets/img/articles/lmu.png"
+    }
+  ],
+  "texts" : {
+    "read_more" : {
+      "ca" : "Llegir més",
+      "es" : "Leer más",
+      "en" : "Read more"
+    },
+    "date_end" : {
+      "ca" : "Data final",
+      "es" : "Fecha fin",
+      "en" : "Date end"
+    },
+    "platforms_legend" : {
+      "ca" : "Alliances estratègiques de llarga duració",
+      "es" : "Alianzas estratégicas de larga duración",
+      "en" : "Long-term strategic alliances"
+    },
+    "plaftorms_title" : {
+      "ca" : "alliances",
+      "es" : "alianzas",
+      "en" : "alliances"
+    },
+    "projects_legend" : {
+      "ca" : "Projectes coordinats per ISGlobal",
+      "es" : "Proyectos coordinados por ISGlobal",
+      "en" : "Projects coordinated by ISGlobal"
+    },
+    "projects_title" : {
+      "ca" : "projectes en ",
+      "es" : "proyectos en ",
+      "en" : "projects in "
+    },
+    "countries" : {
+      "ca" : "països",
+      "es" : "paises",
+      "en" : "countries"
+    },
+    "articles_legend" : {
+      "ca" : "Principals institucions internacionals amb les que ISGlobal ha publicat articles científics el 2018 (Scopus)",
+      "es" : "Principales instituciones internacionales con las que ISGlobal publicó artículos científicos en 2018 (Scopus)",
+      "en" : "Main international institutions with which ISGlobal published scientific articles in 2018 (Scopus)"
+    },
+    "articles_title" : {
+      "ca" : "institucions internacionals",
+      "es" : "instituciones internacionales",
+      "en" : "international institutions"
+    }
+  }
+}
